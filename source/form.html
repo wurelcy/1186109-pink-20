@@ -42,6 +42,84 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Конкурс</h1>
+      <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="name">
+          <p>
+            <label for="your-name">Имя:</label>
+            <input class="your-name" id="your-name" type="text" name="name" placeholder="Укажите имя *">
+          </p>
+          <p>
+            <label for="your-last-name">Фамилия:</label>
+            <input class="your-name" id="your-last-name" type="text" name="name" placeholder="Введите ваше имя *">
+          </p>
+          <p>
+            <label for="your-patronymic-name">Отчество:</label>
+            <input class="your-name" id="your-patronymic-name" type="text" name="name" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="achievements">
+          <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="achievements__list">
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="selfie" type="checkbox" name="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="sunburn" type="checkbox" name="sunburn" checked>
+                <label for="sunburn">Обгорел на пляже</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="chuk" type="checkbox" name="chuk">
+                <label for="chuk">Видел Чака Норриса</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="souvenir" type="checkbox" name="souvenir">
+                <label for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="tower" type="checkbox" name="tower" checked>
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox" id="hotel" type="checkbox" name="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="contest-contacts">
+          <p>
+            <label for="your-number">Номер телефона</label>
+            <input class="your-number" id="your-number" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </p>
+          <p>
+            <label for="your-email">Адрес почты</label>
+            <input class="your-email" id="your-email" type="email" name="email" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+        <fieldset class="travel-app">
+          <legend class="travel-app__legend">С каким приложением путешествовали?</legend>
+            <ul class="travel-app__list">
+              <li class="travel-app__item">
+                <input class="travel-app__radio" type="radio" name="radio" value="ios" id="ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="travel-app__item">
+                <input class="travel-app__radio" type="radio" name="radio" value="android" id="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="travel-app__item">
+                <input class="travel-app__radio" type="radio" name="radio" value="winphone" id="winphone">
+                <label for="winphone">Windows Phone</label>
+              </li>
+            </ul>
+        </fieldset>
+        <p>
+          <label for="feedback">Опишите свои эмоции</label>
+          <textarea class="feedback" id="feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </p>
+        <button type="submit" name="button" class="submit-button">Отправить форму</button>
+        <p class="note"><span class="required">*</span> — обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
