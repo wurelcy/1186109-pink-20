@@ -44,15 +44,15 @@
       <h1 class="visually-hidden">Конкурс</h1>
       <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="name">
-          <p>
+          <p class="name__surname">
             <label for="your-name">Имя:</label>
-            <input class="your-name" id="your-name" type="text" name="name" placeholder="Укажите имя *">
+            <input class="your-name" id="your-name" type="text" name="name" placeholder="Укажите фамилию *">
           </p>
-          <p>
+          <p class="name__name">
             <label for="your-last-name">Фамилия:</label>
             <input class="your-name" id="your-last-name" type="text" name="name" placeholder="Введите ваше имя *">
           </p>
-          <p>
+          <p class="name__patronymic">
             <label for="your-patronymic-name">Отчество:</label>
             <input class="your-name" id="your-patronymic-name" type="text" name="name" placeholder="Ну и отчество тоже">
           </p>
@@ -87,11 +87,11 @@
             </ul>
         </fieldset>
         <fieldset class="contest-contacts">
-          <p>
+          <p class="contest-contacts__number">
             <label for="your-number">Номер телефона</label>
             <input class="your-number" id="your-number" type="tel" name="tel" placeholder="Номер, пожалуйста">
           </p>
-          <p>
+          <p class="contest-contacts__email">
             <label for="your-email">Адрес почты</label>
             <input class="your-email" id="your-email" type="email" name="email" placeholder="Введите почту *">
           </p>
@@ -113,9 +113,9 @@
               </li>
             </ul>
         </fieldset>
-        <p>
+        <p class="feedback">
           <label for="feedback">Опишите свои эмоции</label>
-          <textarea class="feedback" id="feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="feedback__field" id="feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </p>
         <button type="submit" name="button" class="submit-button">Отправить форму</button>
         <p class="note"><span class="required">*</span> — обязательные поля</p>
