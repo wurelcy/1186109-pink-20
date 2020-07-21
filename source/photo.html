@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -42,50 +44,56 @@
     </header>
     <main class="page-main">
       <section class="gallery">
+        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Анны">
-            <p><span class="gallery__author-name">Анна</span>(5 минут назад)</p>
+            <p class="gallery__author-info">Анна <span class="gallery__author-time">(5 минут назад)</span></p>
             <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__author-likes">Нравится:<span>215</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 215</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Левона">
-            <p><span class="gallery__author-name">Левон</span>(5 часов назад)</p>
+            <p class="gallery__author-info">Левон <span class="gallery__author-time">(5 часов назад)</span></p>
             <p class="gallery__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="gallery__author-likes">Нравится:<span>356</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 356</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Антона">
-            <p><span class="gallery__author-name">Антон</span>(12 часов назад)</p>
+            <p class="gallery__author-info">Антон <span class="gallery__author-time">(12 часов назад)</span></p>
             <p class="gallery__author-comment">Соседи будут рады!</p>
-            <p class="gallery__author-likes">Нравится:<span>666</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 666</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Бориса">
-            <p><span class="gallery__author-name">Борис</span>(20 часов назад)</p>
+            <p class="gallery__author-info">Борис <span class="gallery__author-time">(20 часов назад)</span></p>
             <p class="gallery__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="gallery__author-likes">Нравится:<span>215</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 215</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Сергея">
-            <p><span class="gallery__author-name">Сергей</span>(25 часов назад)</p>
+            <p class="gallery__author-info">Сергей <span class="gallery__author-time">(25 часов назад)</span></p>
             <p class="gallery__author-comment">Самая кубанская в мире!</p>
-            <p class="gallery__author-likes">Нравится:<span>4</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 4</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Максима">
-            <p><span class="gallery__author-name">Максим</span>(40 часов назад)</p>
+            <p class="gallery__author-info">Максим <span class="gallery__author-time">(40 часов назад)</span></p>
             <p class="gallery__author-comment">Где снег-то?</p>
-            <p class="gallery__author-likes">Нравится:<span>150</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 150</span></p>
           </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Надежды">
-            <p><span class="gallery__author-name">Надежда</span>(45 часов назад)</p>
+            <p class="gallery__author-info">Надежда <span class="gallery__author-time">(45 часов назад)</span></p>
             <p class="gallery__author-comment">Всем GM и взаимные лайки!</p>
-            <p class="gallery__author-likes">Нравится:<span>2560</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 2560</span></p>
           </li>
         </ul>
+      </section>
+      <section class="upload">
+        <p class="upload__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <button class="upload__button" type="button">Запостить</button>
+        <button class="upload__button-canel disabled" type="button">Отмена</button>
       </section>
     </main>
     <footer class="page-footer">
