@@ -1,0 +1,36 @@
+.gallery{
+  font-family: Open Sans;
+  font-weight: normal;
+  color: #283645;
+}
+
+.gallery__list {
+  list-style: none;
+}
+
+.gallery__description {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.gallery__author-info {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__author-time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery__author-likes {
+  font-size: 12px;
+  color: #D22856;
+  text-transform: uppercase;
+}
+
+.gallery__item {
+  background-color: #F2F2F2;
+}
