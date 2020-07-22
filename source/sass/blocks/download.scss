@@ -1,0 +1,23 @@
+.download {
+  background-color: #283645;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.download__description {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.download__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+}
