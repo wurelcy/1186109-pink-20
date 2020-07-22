@@ -1,13 +1,14 @@
 
 .main-nav {
   background-color: #283645;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
