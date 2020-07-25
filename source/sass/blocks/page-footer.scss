@@ -1,3 +1,15 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+  }
+}
+
 .page-footer__copyright {
   font-size: 14px;
   line-height: 18px;
