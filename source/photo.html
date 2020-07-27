@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" width="" height="" alt="Pink">
+    <header class="page-header container">
+      <a class="page-header__logo container">
+        <img src="/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -45,13 +46,13 @@
     <main class="page-main">
       <section class="gallery">
         <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="gallery__top">
+          <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Анны">
+          <p class="gallery__author-info">Анна <span class="gallery__author-time">(5 минут назад)</span></p>
+          <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="gallery__author-likes">Нравится:<span> 215</span></p>
+        </div>
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Анны">
-            <p class="gallery__author-info">Анна <span class="gallery__author-time">(5 минут назад)</span></p>
-            <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__author-likes">Нравится:<span> 215</span></p>
-          </li>
           <li class="gallery__item">
             <img class="gallery__author-image" src="https://via.placeholder.com/150x150" alt="Фото Левона">
             <p class="gallery__author-info">Левон <span class="gallery__author-time">(5 часов назад)</span></p>
@@ -96,7 +97,7 @@
         <button class="upload__button-canel disabled" type="button">Отмена</button>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo">
         <img src="" width="" height="" alt="Pink">
       </a>

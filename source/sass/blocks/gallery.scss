@@ -1,6 +1,6 @@
 .gallery {
   font-weight: normal;
-  color: #283645;
+  color: $greyblue;
 }
 
 .gallery__list {
@@ -26,15 +26,35 @@
 
 .gallery__author-likes {
   font-size: 12px;
-  color: #d22856;
+  color: $pink;
   text-transform: uppercase;
 }
 
 .gallery__item {
-  background-color: #f2f2f2;
+  background-color: $lightgrey;
 }
 
 .gallery__author-comment {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.gallery__top {
+  text-align: center;
 }
