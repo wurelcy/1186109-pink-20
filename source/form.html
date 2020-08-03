@@ -8,40 +8,44 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header container">
-      <a class="page-header__logo container">
-        <img src="/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+    <header class="page-header form-header">
+      <div class="page-header__upper-panel-wrapper">
+        <div class="container">
+          <a class="page-header__logo page-header__logo--closed">
+            <img src="/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </a>
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item ">
+                  <a href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html">
+                    Фотографии
+                  </a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                  <a href="form.html">
+                    Конкурс
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">
+                    HTML Academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-      <p class="page-header__title container">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+      <p class="page-header__title container">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</p>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Конкурс</h1>
@@ -126,19 +130,19 @@
     </main>
     <footer class="page-footer container">
       <a class="page-footer__logo">
-        <img src="" width="" height="" alt="Pink">
+        <img src="/img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink footer logotype">
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">YouTube</a>
+            <a class="social__link social__link--youtube" href="#" aria-label="YouTube"></a>
           </li>
         </ul>
       </div>

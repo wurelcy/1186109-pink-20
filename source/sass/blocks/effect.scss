@@ -7,58 +7,69 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
-    width: 640px;
-    margin-left: auto;
-    margin-right: 0;
+  }
+
+  .effect__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 660px;
+  }
+
+  .effect__wrapper {
+    padding: 0;
+    padding-bottom: 100px;
+    grid-column: 2 / 2;
+    position: relative;
+
+    &::before {
+      grid-column: 1 / 2;
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-effect.svg");
+      background-repeat: no-repeat;
+      width: 238px;
+      height: 746px;
+      top: 50px;
+      left: -320px;
+    }
+  }
+
+  .effect__desktop-break {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
-    width: 960px;
+    background-color: $lightgrey;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .effect__wrapper {
-    width: 340px;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .effect__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
-  .effect__wrapper {
-    grid-column: 2 / 2;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .effect__wrapper {
-    width: 550px;
-    padding: 0;
-    margin: 0;
+  .effect__tablet-break {
+    display: none;
   }
 }
 
 .effect__about {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: $pink;
+  text-decoration: none;
+  border-bottom: 1px solid $pink;
 }
 
 .effect__title {
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
+  margin-top: 102px;
 }
 
 .effect__description {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
 }

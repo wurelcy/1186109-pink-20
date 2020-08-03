@@ -1,16 +1,88 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 0
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    flex-direction: row;
+.page-footer__logo {
+  margin-top: 0px;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  margin-top: 30px;
+}
+
+.social__item {
+  border: 3px solid $lightgrey;
+  border-radius: 50%;
+  padding: 15px 6px;
+  margin-right: 14px;
+
+  &:hover {
+    border-color: $greyblue;
   }
+
+  &:active {
+    border-color: $lightgrey;
+  }
+}
+
+.social__link {
+  padding: 18px 18px;
+  background-color: $pink;
+  mask: url("../img/icon-twitter.svg") no-repeat center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--facebook {
+  mask: url("../img/icon-facebook.svg") no-repeat center;
+}
+
+.social__link--youtube {
+  mask: url("../img/icon-youtube.svg") no-repeat 60% 50%;
 }
 
 .page-footer__copyright {
   font-size: 14px;
   line-height: 18px;
+  position: relative;
+  padding-right: 40px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-color: $pink;
+    mask: url("../img/logo-htmlacademy.svg") no-repeat center;
+    top: -5px;
+    right: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    font-size: 18px;
+  }
 }
