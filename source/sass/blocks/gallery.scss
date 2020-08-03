@@ -77,6 +77,7 @@
 }
 
 .gallery__top {
+  text-align: center;
 
   .gallery__item {
     text-align: left;
@@ -93,13 +94,11 @@
     max-width: 620px;
   }
 
-//?????????????
   .gallery__author-image {
     background-image: url("../img/panorama-tablet@1x.jpg");
   }
 
   .gallery__top {
-
     .gallery__item {
       text-align: left;
       margin: 0 auto;
@@ -131,7 +130,6 @@
   }
 
   .gallery__top {
-
     .gallery__item {
       max-width: 940px;
     }
@@ -146,13 +144,8 @@
   }
 
   .gallery__mobile-break {
-
     &:last-child {
       display: block;
     }
   }
-}
-
-.gallery__top {
-  text-align: center;
 }

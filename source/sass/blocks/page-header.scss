@@ -27,9 +27,9 @@
     position: relative;
     background-color: $greyblue;
     padding-left: 20px;
-    padding-top: 23px;
+    //padding-top: 23px;
     padding-bottom: 23px;
-    border-bottom: 1px solid rgba($black, .3);
+    border-bottom: 1px solid rgba($black, 0.3);
   }
 
   .page-header__logo--closed {
@@ -43,7 +43,7 @@
   .photo-header,
   .form-header {
     .page-header__upper-panel-wrapper {
-      background-color: rgba($black, .3);
+      background-color: rgba($black, 0.3);
     }
 
     .page-header__logo--closed {
@@ -74,7 +74,7 @@
   }
 
   .page-header__upper-panel-wrapper {
-    background-color: rgba($black, .3);
+    background-color: rgba($black, 0.3);
   }
 
   .page-header__logo--closed {

@@ -74,7 +74,7 @@
     font-size: 40px;
     line-height: 54px;
 
-  .advantages &:last-child {
+    .advantages &:last-child {
       margin-top: 0;
     }
   }
@@ -157,11 +157,6 @@
   .advantages {
     background: linear-gradient(-5deg, $lightgrey 60%, $white 60%, $white 60%);
   }
-}
-
-
-@media (min-width: $tablet-width) {
-
 }
 
 @media (max-width: $mobile-width-only) {
