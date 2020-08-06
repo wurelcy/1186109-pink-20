@@ -24,16 +24,9 @@
   }
 
   .page-header__logo {
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
-    background-color: $greyblue;
-    padding-left: 20px;
-    //padding-top: 23px;
-    padding-bottom: 23px;
-    border-bottom: 1px solid rgba($black, 0.3);
-  }
-
-  .page-header__logo--closed {
-    background-color: transparent;
   }
 
   .container {
@@ -44,10 +37,6 @@
   .form-header {
     .page-header__upper-panel-wrapper {
       background-color: rgba($black, 0.3);
-    }
-
-    .page-header__logo--closed {
-      border: 0;
     }
   }
 
@@ -63,7 +52,15 @@
 
 @media (max-width: $desktop-width - 1px) {
   .page-header__logo {
+    display: inline-block;
+    padding-left: 20px;
     margin-top: 23px;
+  }
+
+  .page-header__upper-panel-wrapper .container {
+    min-width: 100%;
+    border-bottom: 1px solid rgba($black, 0.3);
+    //background-color: $greyblue;
   }
 }
 
@@ -75,10 +72,6 @@
 
   .page-header__upper-panel-wrapper {
     background-color: rgba($black, 0.3);
-  }
-
-  .page-header__logo--closed {
-    border: 0;
   }
 
   .page-header__title {
