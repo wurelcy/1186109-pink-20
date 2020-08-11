@@ -31,6 +31,7 @@
 .gallery__author-time {
   font-weight: 300;
   font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -56,7 +57,15 @@
 
 .gallery__item {
   background-color: $lightgrey;
-  margin-top: 20px;
+  margin-top: 19px;
+
+  &:nth-child(5) {
+    margin-top: 20px;
+  }
+
+  &:nth-child(6) {
+    margin-top: 21px;
+  }
 }
 
 .gallery__author-comment {
@@ -70,10 +79,51 @@
   .gallery__tablet-break {
     display: none;
   }
-}
 
-.gallery__author-image {
-  width: 100%;
+  .gallery__description {
+    margin-top: 44px;
+    margin-bottom: 50px;
+  }
+
+  .gallery__top {
+    .gallery__author-likes {
+      display: none;
+    }
+  }
+
+  .gallery__author-comment {
+    padding-bottom: 2px;
+  }
+
+  .gallery__author-info {
+    padding-top: 15px;
+  }
+
+  .gallery__author-likes--mobile {
+    font-size: 12px;
+    color: $pink;
+    text-transform: uppercase;
+    padding-left: 48px;
+    padding-bottom: 24px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 12px;
+      background-color: $pink;
+      mask: url("../img/icon-heart.svg") no-repeat center;
+      top: 0;
+      left: 17px;
+    }
+  }
+
+  .gallery__list {
+    .gallery__author-info {
+      padding-top: 14px;
+    }
+  }
 }
 
 .gallery__top {
@@ -90,8 +140,59 @@
   .gallery__list {
     display: grid;
     gap: 20px;
+    row-gap: 17px;
     grid-template-columns: 1fr 1fr;
     max-width: 620px;
+    margin-top: 52px;
+
+    .gallery__author-comment {
+      padding-bottom: 18px;
+      padding-right: 28px;
+    }
+
+    .gallery__author-likes {
+      margin: 0;
+      margin-top: auto;
+      margin-bottom: 31px;
+      padding: 0;
+      padding-left: 30px;
+
+      &::before {
+        top: 0;
+        left: 257px;
+      }
+    }
+
+    .gallery__author-image {
+      width: 100%;
+    }
+
+    .gallery__item {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 455px;
+    }
+  }
+
+  .gallery__author-likes--mobile {
+    display: none;
+  }
+
+  .gallery__author-info {
+    padding-top: 20px;
+    padding-left: 31px;
+  }
+
+  .gallery__author-comment {
+    margin: 0;
+    padding-left: 29px;
+    padding-bottom: 23px;
+    padding-right: 28px;
+
+    br {
+      display: none;
+    }
   }
 
   .gallery__top {
@@ -99,6 +200,25 @@
       text-align: left;
       margin: 0 auto;
       max-width: 620px;
+    }
+
+    .gallery__author-info,
+    .gallery__author-likes {
+      margin: 0;
+      display: inline-block;
+      vertical-align: center;
+    }
+
+    .gallery__author-likes {
+      display: inline-block;
+      margin-top: auto;
+      margin-left: 298px;
+      padding: 0;
+
+      &::before {
+        top: 0;
+        left: 105px;
+      }
     }
   }
 
@@ -108,26 +228,84 @@
 
   .gallery__description {
     font-size: 18px;
-    margin-top: 100px;
-    margin-bottom: 85px;
+    margin-top: 91px;
+    margin-bottom: 77px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gallery__description {
+    margin-top: 91px;
+    margin-bottom: 89px;
+  }
+
+  .gallery__author-comment {
+    padding-left: 28px;
+  }
+
+  .gallery__author-info {
+    padding-left: 28px;
+    padding-top: 21px;
+  }
+
   .gallery__list {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 940px;
-  }
+    margin-top: 20px;
 
-  .gallery__description {
-    margin-bottom: 97px;
+    .gallery__item {
+      min-height: 555px;
+      margin-top: 32px;
+
+      &:nth-child(1) {
+        margin-top: 32px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 32px;
+      }
+    }
+
+    .gallery__author-likes {
+      padding-left: 28px;
+      padding-bottom: 0;
+
+      &::before {
+        top: -1px;
+        left: 256px;
+      }
+    }
   }
 
   .gallery__top {
     .gallery__item {
+      padding-top: 0;
       max-width: 940px;
+    }
+
+    .gallery__author-comment {
+      padding-left: 28px;
+      padding-bottom: 22px;
+    }
+
+    .gallery__author-info,
+    .gallery__author-likes {
+      margin: 0;
+      display: inline-block;
+      vertical-align: center;
+    }
+
+    .gallery__author-likes {
+      margin-top: 0;
+      padding: 0;
+      margin-left: 620px;
+
+      &::before {
+        top: 0;
+        left: 105px;
+      }
     }
 
     br {

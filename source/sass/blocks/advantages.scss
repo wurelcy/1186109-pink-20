@@ -1,12 +1,24 @@
+
+@media (max-width: $desktop-width - 1) {
+  .advantages__title {
+    margin: 0;
+    text-align: left;
+
+    br {
+      display: none;
+    }
+  }
+}
+
 .advantages {
-  margin-top: 55px;
-  background: linear-gradient(-5deg, $lightgrey 80%, $white 80%, $white 70%);
+  margin-top: 40px;
+  background: linear-gradient(-5deg, $lightgrey 79%, $white 79%, $white 79%);
 }
 
 .advantages__list {
   list-style: none;
   margin: 0;
-  margin-top: 123px;
+  margin-top: 113px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -18,27 +30,38 @@
   line-height: 24px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .advantages__description {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 43px;
+  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+
+  .advantages__mobile-break {
+    display: inline;
+  }
 }
 
 .advantages__slogan {
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 29px;
   color: $greyblue;
   text-align: center;
   margin: 0;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-top: 45px;
+    background: linear-gradient(-5deg, $lightgrey 65%, $white 65%, $white 65%);
+  }
+
   .advantages__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,6 +70,9 @@
   .advantages__list {
     grid-column: 2 / 2;
     position: relative;
+    margin-top: 106px;
+    margin-left: 5px;
+    padding-bottom: 5px;
 
     &::before {
       grid-column: 1 / 2;
@@ -56,8 +82,8 @@
       background-repeat: no-repeat;
       width: 268px;
       height: 481px;
-      bottom: 5px;
-      left: -320px;
+      bottom: -5px;
+      left: -310px;
     }
   }
 
@@ -68,11 +94,20 @@
 
   .advantages__description {
     text-align: left;
+    margin-top: 12px;
+    margin-bottom: 35px;
+
+    .advantages__desktop-break,
+    .advantages__mobile-break {
+      display: none;
+    }
   }
 
   .advantages__slogan {
     font-size: 40px;
     line-height: 54px;
+    margin: 0;
+    margin-left: 5px;
 
     .advantages &:last-child {
       margin-top: 0;
@@ -83,10 +118,6 @@
   .advantages__desktop-break {
     display: none;
   }
-
-  .advantages {
-    background: linear-gradient(-5deg, $lightgrey 65%, $white 65%, $white 65%);
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -95,9 +126,10 @@
   }
 
   .advantages__list {
-    margin-top: 432px;
+    margin-top: 415px;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 0;
 
     &::before {
       display: none;
@@ -118,6 +150,17 @@
 
   .advantages__description {
     text-align: center;
+    margin-top: 21px;
+    font-size: 18px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+
+    .advantages__desktop-break {
+      display: inline;
+    }
   }
 
   .advantages__mobile-break {
@@ -126,6 +169,15 @@
 
   .advantages__item {
     position: relative;
+    margin-left: 35px;
+
+    &:nth-child(3) {
+      margin-left: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 45px;
+    }
 
     &::before {
       content: "";
@@ -134,34 +186,36 @@
       background-repeat: no-repeat;
       width: 292px;
       height: 302px;
-      top: -350px;
-      left: 30px;
+      top: -360px;
+      left: -17px;
     }
 
     &:nth-child(2)::before {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
-      left: 0;
+      left: 2px;
     }
 
     &:nth-child(3)::before {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      left: 30px;
+      left: 12px;
     }
   }
 
   .advantages__slogan {
+    margin-left: 10px;
     font-size: 50px;
     line-height: 68px;
   }
 
   .advantages {
-    background: linear-gradient(-5deg, $lightgrey 60%, $white 60%, $white 60%);
+    margin-top: 60px;
+    background: linear-gradient(-5deg, $lightgrey 62%, $white 62%, $white 62%);
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .advantages__list {
-    padding-bottom: 282px;
+    padding-bottom: 290px;
     position: relative;
 
     &::before {

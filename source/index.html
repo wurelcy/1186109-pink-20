@@ -9,15 +9,21 @@
   </head>
   <body class="page-body">
     <header class="page-header main-header">
-      <div class="page-header__upper-panel-wrapper">
+      <div class="page-header__upper-panel-wrapper page-header__upper-panel-wrapper--opened">
         <div class="container">
-          <a class="page-header__logo">
-            <img src="/img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-          </a>
-          <nav class="main-nav main-nav--closed">
-            <button class="main-nav__toggle" type="button">
+          <div class="page-header__upper">
+            <a class="page-header__logo">
+              <picture>
+                <source srcset="/img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+                <source srcset="/img/logo-pink-white-tablet.svg" media="(min-width: 768px)">
+                <img src="/img/logo-pink-white-mobile.svg" alt="Pink">
+              </picture>
+            </a>
+            <button class="page-header__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
+          </div>
+          <nav class="main-nav main-nav--opened">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
@@ -47,11 +53,10 @@
       </div>
       <div class="container">
         <div class="page-header__download-wrapper">
-          <p class="page-header__title">Взгляните на жизнь<br> иначе!</p>
+          <p class="page-header__title">Взгляните<br> на жизнь<br class="page-header__mobile-break"> иначе!</p>
           <section class="download">
             <div class="download__container">
               <a class="download__link" href="#">Скачать приложение</a>
-            </div>
               <ul class="download__list">
                 <li class="download__item">
                   <a href="#" aria-label="App Store"></a>
@@ -64,6 +69,7 @@
                 </li>
               </ul>
               <p class="download__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </div>
           </section>
         </div>
       </div>
@@ -81,15 +87,15 @@
         <div class="advantages__wrapper advantages__grid">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает<br class="advantages__desktop-break"> настроение</h3>
+              <h3 class="advantages__title">Поднимает<br> настроение</h3>
               <p class="advantages__description">Приложение позволит вам<br class="advantages__desktop-break"> победить<br> осеннюю хандру<br class="advantages__desktop-break"> и депрессию<br class="advantages__mobile-break"> буквально в<br class="advantages__tablet-break"> несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир<br class="advantages__desktop-break"> вокруг</h3>
+              <h3 class="advantages__title">Меняет мир<br> вокруг</h3>
               <p class="advantages__description">Сделайте снимок и<br class="advantages__desktop-break"> украсьте его<br class="advantages__mobile-break"> смайликом<br class="advantages__tablet-break"> или текстовой подписью,<br class="advantages__mobile-break advantages__desktop-break"> чтобы<br class="advantages__tablet-break"> усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Заводит<br class="advantages__desktop-break"> новых друзей</h3>
+              <h3 class="advantages__title">Заводит<br> новых друзей</h3>
               <p class="advantages__description">Ставьте лайки,<br class="advantages__desktop-break"> комментируйте,<br class="advantages__mobile-break"> делитесь<br class="advantages__tablet-break"> фотографиями с друзьями<br class="advantages__desktop-break"> и<br class="advantages__mobile-break"> заводите новых</p>
             </li>
           </ul>
