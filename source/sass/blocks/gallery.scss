@@ -9,14 +9,18 @@
   margin: 0 auto;
   margin-top: 20px;
   max-width: 280px;
+
+  .gallery__author-info {
+    padding-top: 14px;
+  }
 }
 
 .gallery__description {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-top: 54px;
-  margin-bottom: 60px;
+  margin-top: 44px;
+  margin-bottom: 50px;
 }
 
 .gallery__author-info {
@@ -25,7 +29,7 @@
   line-height: 24px;
   margin: 0;
   padding-left: 17px;
-  padding-top: 26px;
+  padding-top: 15px;
 }
 
 .gallery__author-time {
@@ -73,66 +77,44 @@
   line-height: 24px;
   padding-left: 17px;
   margin-top: 0;
+  padding-bottom: 2px;
 }
 
-@media (max-width: $mobile-width-only) {
-  .gallery__tablet-break {
-    display: none;
-  }
-
-  .gallery__description {
-    margin-top: 44px;
-    margin-bottom: 50px;
-  }
-
-  .gallery__top {
-    .gallery__author-likes {
-      display: none;
-    }
-  }
-
-  .gallery__author-comment {
-    padding-bottom: 2px;
-  }
-
-  .gallery__author-info {
-    padding-top: 15px;
-  }
-
-  .gallery__author-likes--mobile {
-    font-size: 12px;
-    color: $pink;
-    text-transform: uppercase;
-    padding-left: 48px;
-    padding-bottom: 24px;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 13px;
-      height: 12px;
-      background-color: $pink;
-      mask: url("../img/icon-heart.svg") no-repeat center;
-      top: 0;
-      left: 17px;
-    }
-  }
-
-  .gallery__list {
-    .gallery__author-info {
-      padding-top: 14px;
-    }
-  }
+.gallery__tablet-break {
+  display: none;
 }
 
 .gallery__top {
   text-align: center;
 
+  .gallery__author-likes {
+    display: none;
+  }
+
   .gallery__item {
     text-align: left;
     margin: 0 auto;
     max-width: 280px;
+  }
+}
+
+.gallery__author-likes--mobile {
+  font-size: 12px;
+  color: $pink;
+  text-transform: uppercase;
+  padding-left: 48px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background-color: $pink;
+    mask: url("../img/icon-heart.svg") no-repeat center;
+    top: 0;
+    left: 17px;
   }
 }
 
@@ -224,6 +206,10 @@
         left: 105px;
       }
     }
+  }
+
+  .gallery__tablet-break {
+    display: inline;
   }
 
   .gallery__mobile-break {

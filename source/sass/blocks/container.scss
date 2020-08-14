@@ -1,9 +1,7 @@
-@media (max-width: $mobile-width-only) {
-  .container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 0;
-  }
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
