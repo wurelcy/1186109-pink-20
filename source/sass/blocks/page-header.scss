@@ -165,6 +165,8 @@
   }
 
   .main-header .page-header__title {
+    margin-bottom: 0;
+
     br {
       display: inline;
     }
@@ -239,6 +241,11 @@
     margin-top: 100px;
     font-size: 50px;
     line-height: 68px;
+    margin-bottom: 35px;
+  }
+
+  .main-header .page-header__title {
+    margin-top: 98px;
     margin-bottom: 35px;
   }
 
