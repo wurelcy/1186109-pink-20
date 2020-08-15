@@ -79,22 +79,22 @@
   }
 }
 
+.main-header .page-header__title {
+  margin-bottom: 315px;
+  margin-top: 22px;
+
+  br {
+    display: none;
+  }
+
+  .page-header__mobile-break {
+    display: inline;
+  }
+}
+
 @media (max-width: $desktop-width - 1px) {
   .container {
     min-width: 100%;
-  }
-
-  .main-header .page-header__title {
-    margin-bottom: 315px;
-    margin-top: 22px;
-
-    br {
-      display: none;
-    }
-
-    .page-header__mobile-break {
-      display: inline;
-    }
   }
 
   .page-header__upper-panel-wrapper--opened {

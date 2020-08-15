@@ -98,7 +98,7 @@
   .advantages__list {
     grid-column: 2 / 2;
     position: relative;
-    margin-top: 106px;
+    margin-top: 104px;
     margin-left: 5px;
     padding-bottom: 5px;
 
@@ -124,6 +124,10 @@
     text-align: left;
     margin-top: 12px;
     margin-bottom: 35px;
+
+    .advantages__tablet-break {
+      display: inline;
+    }
 
     .advantages__desktop-break,
     .advantages__mobile-break {
