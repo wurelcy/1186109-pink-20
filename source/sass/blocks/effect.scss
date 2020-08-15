@@ -61,6 +61,10 @@
   .effect__desktop-break {
     display: none;
   }
+
+  .effect__description {
+    margin-top: 11px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -98,7 +102,7 @@
   }
 
   .effect__title {
-    margin-top: 124px;
+    margin-top: 122px;
     padding: 0;
 
     br {
@@ -110,7 +114,7 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 22px;
 
     .effect__tablet-break {
       display: none;

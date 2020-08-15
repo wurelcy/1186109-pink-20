@@ -158,10 +158,9 @@
   }
 
   .advantages__list {
-    margin-top: 415px;
+    margin-top: 417px;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
+    margin-left: 10px;
 
     &::before {
       display: none;
@@ -182,11 +181,12 @@
 
   .advantages__description {
     text-align: center;
-    margin-top: 21px;
+    margin-top: 24px;
     font-size: 18px;
     line-height: 30px;
 
-    br {
+    br,
+    .advantages__tablet-break {
       display: none;
     }
 
@@ -201,7 +201,7 @@
 
   .advantages__item {
     position: relative;
-    margin-left: 35px;
+    margin-left: 25px;
 
     &:nth-child(3) {
       margin-left: 20px;
@@ -209,6 +209,7 @@
 
     &:nth-child(2) {
       margin-left: 45px;
+      margin-right: 5px;
     }
 
     &::before {
@@ -218,23 +219,22 @@
       background-repeat: no-repeat;
       width: 292px;
       height: 302px;
-      top: -360px;
+      top: -355px;
       left: -17px;
     }
 
     &:nth-child(2)::before {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
-      left: 2px;
+      left: 5px;
     }
 
     &:nth-child(3)::before {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      left: 12px;
+      left: 11px;
     }
   }
 
   .advantages__slogan {
-    margin-left: 10px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -244,33 +244,3 @@
     background: linear-gradient(-5deg, $lightgrey 62%, $white 62%, $white 62%);
   }
 }
-
-/*@media (max-width: $mobile-width-only) {
-  .advantages__list {
-    padding-bottom: 290px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/iphone-screen-mobile@1x.png");
-      background-repeat: no-repeat;
-      width: 157px;
-      height: 320px;
-      bottom: -40px;
-      left: 80px;
-      overflow: hidden;
-    }
-  }
-
-  .advantages__tablet-break,
-  .advantages__desktop-break {
-    display: none;
-  }
-
-  .advantages__wrapper {
-    margin: 0 auto;
-    padding: 0;
-    width: 320px;
-  }
-}*/
