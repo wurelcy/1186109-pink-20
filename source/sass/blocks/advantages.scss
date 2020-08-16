@@ -21,6 +21,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: contain;
     }
   }
 }
@@ -119,6 +120,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: contain;
       }
     }
   }
@@ -225,6 +227,7 @@
       position: absolute;
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
       background-repeat: no-repeat;
+      background-size: contain;
       width: 292px;
       height: 302px;
       top: -357px;
