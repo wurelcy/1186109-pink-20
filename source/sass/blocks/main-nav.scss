@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $greyblue;
+  width: auto;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
@@ -15,27 +15,77 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  min-width: 100%;
 }
 
 .main-nav__list a {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 24px;
   color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $greyblue;
+  border-top: 1px solid rgba($white, 0.3);
+  border-bottom: 1px solid $black;
+  text-align: center;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+@media (max-width: $desktop-width - 1px) {
+  .main-nav--closed .site-list {
+    display: none;
   }
 
-  .main-nav__toggle {
-    display: none;
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item a {
+    padding: 25px 21px;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
+    background-color: $greyblue;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 960px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 174px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 620px;
+    margin: 0;
+  }
+
+  .main-nav__list a {
+    background-color: transparent;
+    border: 0;
+    padding: 12px 21px;
+    text-transform: none;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }

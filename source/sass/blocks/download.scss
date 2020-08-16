@@ -1,5 +1,9 @@
 .download {
   background-color: $darkblue;
+  min-height: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   a {
     color: $white;
@@ -12,12 +16,121 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  padding: 0;
 }
 
 .download__link {
+  display: inline-block;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   border: 3px solid $white;
   border-radius: 29px;
+  padding: 14px 37px;
+  margin-top: 15px;
+  text-align: center;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+}
+
+.download__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 23px;
+  margin-left: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__item {
+  margin-right: 35px;
+  cursor: pointer;
+
+  &:first-child {
+    padding: 28px 24px;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-child(2) {
+    padding: 28px 24px;
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 35px;
+  }
+
+  &:last-child {
+    padding: 28px 24px;
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 35px;
+  }
+}
+
+.download__container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-color: transparent;
+    margin-bottom: 95px;
+    margin-left: 20px;
+  }
+
+  .download__container {
+    min-width: 303px;
+  }
+
+  .download__description {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .download__link {
+    margin: 0;
+    margin-top: 30px;
+    padding: 16px 45px;
+  }
+
+  .download__list {
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    margin-bottom: 108px;
+    margin-left: 0;
+  }
+
+  .download__description {
+    margin-top: 50px;
+  }
+
+  .download__link {
+    font-size: 21px;
+    padding: 16px 28px;
+    margin-top: 0;
+  }
+
+  .download__list {
+    margin-top: 68px;
+  }
 }
