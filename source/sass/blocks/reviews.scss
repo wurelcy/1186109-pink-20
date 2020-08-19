@@ -59,32 +59,33 @@
       width: 620px;
     }
   }
-    .reviews__author--mobile {
-      display: none;
-    }
 
-    .reviews__author-info {
-      display: block;
-      font-size: 14px;
-      line-height: 30px;
-      color: $greyblue;
-      margin-top: 0;
-      margin-bottom: 49px;
-    }
+  .reviews__author--mobile {
+    display: none;
+  }
 
-    .reviews__message {
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .reviews__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $greyblue;
+    margin-top: 0;
+    margin-bottom: 49px;
+  }
 
-    .reviews__author {
-      display: block;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 30px;
-      margin-top: 51px;
-      margin-bottom: 0;
-    }
+  .reviews__message {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__author {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 51px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

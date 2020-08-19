@@ -161,10 +161,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__upper-panel-wrapper--closed .page-header__toggle::before {
-    top: 15px;
-  }
-
   .container .page-header__upper {
     max-width: 620px;
     margin: 40px auto 40px;

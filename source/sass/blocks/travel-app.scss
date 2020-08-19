@@ -40,7 +40,7 @@
 }
 
 .travel-app__radio {
-  &+label::before {
+  & + label::before {
     position: absolute;
     content: "";
     width: 37px;
@@ -52,7 +52,7 @@
     top: 0;
   }
 
-  &+label::after {
+  & + label::after {
     position: absolute;
     content: "";
     display: none;
@@ -64,15 +64,15 @@
     top: 11px;
   }
 
-  &:hover+label::before {
+  &:hover + label::before {
     border-color: $greyblue;
   }
 
-  &:active+label::before {
+  &:active + label::before {
     border-color: $pink;
   }
 
-  &:checked+label::after {
+  &:checked + label::after {
     display: block;
   }
 }
@@ -97,7 +97,7 @@
     }
   }
 
-  .travel-app__list{
+  .travel-app__list {
     max-width: 100%;
     margin: 0;
     margin-top: 49px;

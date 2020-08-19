@@ -39,15 +39,15 @@
 }
 
 .achievements__checkbox-svg {
-	display: none;
-	position: absolute;
-	left: -20px;
-	top: 10px;
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 10px;
   fill: $pink;
 }
 
 .achievements__checkbox {
-  &+label::before {
+  & + label::before {
     position: absolute;
     content: "";
     width: 35px;
@@ -59,17 +59,17 @@
     top: 0;
   }
 
-  &:hover+label::before {
+  &:hover + label::before {
     border-color: $greyblue;
   }
 
-  &:active+label::before {
+  &:active + label::before {
     border-color: $pink;
   }
 
-  &:checked+label {
+  &:checked + label {
     .achievements__checkbox-svg {
-    	display: block;
+      display: block;
     }
   }
 }
