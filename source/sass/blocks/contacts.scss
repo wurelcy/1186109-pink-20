@@ -1,1 +1,74 @@
-// code here
+.contact-us {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.contacts__how-to {
+  text-align: center;
+  color: $greyblue;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.contacts__info {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-us {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 620px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__item {
+    &:nth-child(3) {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-us {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .contacts__wrapper {
+    max-width: 920px;
+  }
+
+  .contacts__item {
+    &:nth-child(3) {
+      flex-grow: 0;
+    }
+  }
+}

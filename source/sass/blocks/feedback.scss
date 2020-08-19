@@ -1,1 +1,71 @@
-// code here
+.feedback {
+  order: 2;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 42px;
+  border: 0;
+  margin-bottom: 52px;
+}
+
+.feedback__legend {
+  margin: 0;
+  min-width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.feedback__field {
+  padding: 0;
+  margin: 0;
+  min-width: 280px;
+  border: 2px solid $grey;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  min-height: 197px;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 12px;
+
+  &::placeholder {
+    color: $greyblue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    order: 0;
+    border: 2px solid $grey;
+    border-radius: 1px;
+    min-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .feedback__legend {
+    min-width: auto;
+    padding: 0 38px;
+  }
+
+  .feedback__field {
+    margin-top: 42px;
+    margin-bottom: 53px;
+    margin-left: 60px;
+    min-width: 496px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    min-width: 940px;
+  }
+
+  .feedback__field {
+    min-width: 816px;
+    min-height: 124px;
+  }
+}

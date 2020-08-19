@@ -1,0 +1,31 @@
+.form {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: $greyblue;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+.form__fillin {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    font-size: 18px;
+    max-width: 490px;
+    margin-top: 100px;
+  }
+
+  .form__fillin {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    max-width: 756px;
+  }
+}

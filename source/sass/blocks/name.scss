@@ -1,1 +1,69 @@
-// code here
+.name {
+  border: 0;
+  margin: 0 auto;
+  max-width: 280px;
+  margin-bottom: 44px;
+}
+
+.name__field {
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+
+  label {
+    display: block;
+    padding-left: 22px;
+  }
+}
+
+.your-name {
+  border: 2px solid $grey;
+  border-radius: 1px;
+  padding: 21px;
+  min-width: 276px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: $greyblue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .name {
+    min-width: 640px;
+    margin-top: 82px;
+  }
+
+  .name__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  }
+
+  .your-name {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name {
+    min-width: 436px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .name__field {
+    margin-bottom: 58px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

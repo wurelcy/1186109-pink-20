@@ -1,1 +1,205 @@
-// code here
+.rates {
+  background-color: $lightgrey;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.rates__table {
+  overflow: hidden;
+  position: absolute;
+  left: -235px;
+  background-color: $white;
+  border-collapse: collapse;
+
+}
+
+.rates__item-title,
+.rates__empty {
+  display: none;
+}
+
+.rates__table-head {
+  background-color: $greyblue;
+  empty-cells: hide;
+
+  th {
+    border: 2px solid $grey;
+  }
+}
+
+.rates__title {
+  color: $white;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 19px;
+  padding: 0 100px;
+}
+
+.rates__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $white;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.rates__item {
+  border: 2px solid $grey;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $greyblue;
+  text-align: left;
+  padding: 22px;
+  padding-left: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-color: $green;
+    mask: url("../img/icon-yes-green.svg");
+    top: 22px;
+    right: 17px;
+  }
+}
+
+.rates__item--no {
+  &::after {
+    width: 27px;
+    height: 27px;
+    background-color: $orange;
+    mask: url("../img/icon-no.svg");
+    top: 22px;
+    right: 21px;
+  }
+}
+
+.rates__controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 395px;
+  max-width: 56px;
+  align-self: center;
+}
+
+.rates__button {
+  border: 3px solid $lightgrey;
+  border-radius: 50%;
+  background-color: rgba($greyblue, 0.3);
+  padding: 3px;
+}
+
+.rates__button--active {
+  border: 3px solid $greyblue;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__table {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .rates__item-title {
+    display: table-cell;
+    padding: 17px;
+    padding-left: 15px;
+    border: 2px solid $grey;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: $greyblue;
+    text-align: left;
+    text-transform: none;
+    min-width: 153px;
+  }
+
+  .rates__item {
+    &::after {
+      top: 22px;
+      right: 40%;
+    }
+  }
+
+  .rates__item--no {
+    &::after {
+      top: 22px;
+      right: 40%;
+    }
+  }
+
+  .rates__empty {
+    display: table-cell;
+    background-color: $lightgrey;
+  }
+
+  .rates__table-head {
+    th {
+      &:first-child {
+        border: 2px solid $lightgrey;
+        border-bottom: 2px solid $grey;
+      }
+    }
+  }
+
+  .rates__controls {
+    display: none;
+  }
+
+  .rates__title {
+    padding: 0;
+    min-width: 156px;
+    text-align: center;
+
+  }
+
+  .rates__price {
+    margin-bottom: 14px;
+  }
+
+  .rates__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    padding-top: 0;
+  }
+
+  .rates__table {
+    margin-bottom: 48px;
+  }
+
+  .rates__title,
+  .rates__item-title {
+    min-width: 233px;
+  }
+
+  .rates__item-title {
+    font-size: 18px;
+    padding-left: 22px;
+  }
+
+  .rates__item {
+    &::after {
+      right: 45%;
+    }
+  }
+
+  .rates__item--no {
+    &::after {
+      right: 45%;
+    }
+  }
+}
