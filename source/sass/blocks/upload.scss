@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .upload__wrapper {
@@ -25,6 +26,8 @@
 }
 
 .upload__edit {
+  margin: 0;
+  padding: 0;
   margin-top: 42px;
   margin-left: 37px;
 }
@@ -32,10 +35,12 @@
 .upload__range {
   display: none;
   position: absolute;
+  min-height: 14px;
 }
 
 .upload__range--active {
   position: absolute;
+  min-height: 20px;
 }
 
 .upload__range-control {
@@ -150,6 +155,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 620px;
+    margin-top: 57px;
   }
 
   .upload__edit {
@@ -165,6 +171,7 @@
   .upload__range {
     display: block;
     position: relative;
+    min-height: 14px;
   }
 
   .upload__range--active {
@@ -173,21 +180,22 @@
 
   .upload__range-bar {
     width: 202px;
-    top: -50px;
+    top: -20px;
     left: 50px;
   }
 
   .upload__range-control {
-    top: -56px;
+    top: -26px;
     left: 140px;
-    height: 14px;
     width: 14px;
   }
 
   .upload__edit-button {
+    margin-bottom: 10px;
+
     &::before {
       width: 275px;
-      bottom: -27px;
+      bottom: -15px;
       left: 0;
     }
   }
@@ -215,7 +223,7 @@
 
   .upload__button {
     padding: 15px 81px;
-    margin-top: 67px;
+    margin-top: 104px;
     margin-bottom: 24px;
   }
 
@@ -259,7 +267,7 @@
   .upload__buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 76px;
+    margin-top: 26px;
     margin-bottom: 24px;
   }
 
@@ -298,7 +306,7 @@
 
     &::before {
       width: 410px;
-      bottom: -27px;
+      bottom: -17px;
       left: 0;
     }
   }
