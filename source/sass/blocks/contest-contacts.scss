@@ -1,1 +1,138 @@
-// code here
+.contest-contacts {
+  order: 1;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 280px;
+}
+
+.contest-contacts__legend {
+  display: none;
+}
+
+.contest-contacts__number,
+.contest-contacts__email {
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+
+  label {
+    display: block;
+    padding-left: 22px;
+  }
+}
+
+.contest-contacts__your-number,
+.contest-contacts__your-email {
+  border: 2px solid $grey;
+  border-radius: 1px;
+  padding: 21px;
+  min-width: 276px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: $greyblue;
+  }
+}
+
+.contest-contacts__icon {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-contacts {
+    order: 0;
+    border: 2px solid $grey;
+    min-width: 620px;
+  }
+
+  .contest-contacts__legend {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+    padding: 14px 31px;
+    text-align: center;
+  }
+
+  .contest-contacts__number,
+  .contest-contacts__email {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 59px;
+      height: 58px;
+      background-color: $grey;
+      top: 2px;
+      right: 62px;
+    }
+
+    label {
+      margin-top: 22px;
+      order: 1;
+    }
+  }
+
+  .contest-contacts__your-number,
+  .contest-contacts__your-email {
+    max-width: 496px;
+  }
+
+  .contest-contacts__email {
+    .contest-contacts__icon {
+      top: 25px;
+    }
+  }
+
+  .contest-contacts__icon {
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 2;
+    stroke: black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-contacts {
+    min-width: 940px;
+    margin-top: 20px;
+  }
+
+  .contest-contacts__icon {
+    right: 20px;
+  }
+
+  .contest-contacts__email,
+  .contest-contacts__number {
+    margin-top: 30px;
+
+    &::after {
+      right: 2px;
+    }
+  }
+
+  .contest-contacts__email {
+    margin-right: 60px;
+    margin-left: 0;
+  }
+
+  .contest-contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contest-contacts__your-number,
+  .contest-contacts__your-email {
+    min-width: 371px;
+  }
+}

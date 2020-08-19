@@ -1,1 +1,55 @@
-// code here
+.map {
+  margin-top: 41px;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    mask: url("../img/bg-triangle-white-footer.svg");
+    top: -20px;
+    left: -130px;
+    width: 600px;
+    height: 62px;
+    z-index: 2;
+  }
+
+  iframe {
+    display: none;
+    border: 0;
+    width: 100%;
+  }
+}
+
+.map__image {
+  display: block;
+  margin: auto;
+  max-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    &::before {
+      top: 0;
+      left: 40px;
+    }
+  }
+
+  .map__image {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    &::before {
+      top: 0;
+      left: 35%;
+    }
+  }
+
+  .map__image {
+    max-width: 960px;
+  }
+}
