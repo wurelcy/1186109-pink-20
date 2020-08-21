@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .upload__wrapper {
@@ -25,22 +26,49 @@
 }
 
 .upload__edit {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
   margin-top: 42px;
   margin-left: 37px;
 }
 
-.upload__range {
-  display: none;
-  position: absolute;
+.upload__edit-item {
+  position: relative;
+
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: rgba($greyblue, 0.1);
+    bottom: -34px;
+    left: -57px;
+  }
+
+  &:first-child::before {
+    display: block;
+  }
 }
 
-.upload__range--active {
-  position: absolute;
+.upload__range--active,
+.upload__range {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 20px;
+  //min-width: 275px;
+}
+
+.upload__range {
+  display: none;
 }
 
 .upload__range-control {
   position: absolute;
-  top: -8px;
+  top: -6px;
   left: 140px;
   border: 2px solid $pink;
   background-color: $lightgrey;
@@ -113,16 +141,6 @@
   &:last-child {
     margin-right: 0;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 1px;
-    background-color: rgba($greyblue, 0.1);
-    bottom: -75px;
-    left: -60px;
-  }
 }
 
 .upload__tool--active {
@@ -150,9 +168,38 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 620px;
+    margin-top: 57px;
+  }
+
+  .upload__edit-item {
+    display: flex;
+
+    &:nth-child(2) {
+      .upload__range-control {
+        left: 25px;
+      }
+    }
+
+    &:last-child {
+      .upload__range-control {
+        left: 96px;
+      }
+    }
+
+    &::before {
+      display: block;
+      width: 275px;
+      bottom: 30px;
+      left: 0;
+    }
+
+    &:first-child::before {
+      display: block;
+    }
   }
 
   .upload__edit {
+    flex-direction: column;
     margin-top: 0;
     margin-left: 0;
   }
@@ -164,32 +211,27 @@
 
   .upload__range {
     display: block;
-    position: relative;
   }
 
-  .upload__range--active {
-    position: relative;
+  .upload__range--active,
+  .upload__range {
+    min-width: 202px;
   }
 
   .upload__range-bar {
     width: 202px;
-    top: -50px;
-    left: 50px;
+    top: 10px;
+    left: 0;
   }
 
   .upload__range-control {
-    top: -56px;
+    top: 4px;
     left: 140px;
-    height: 14px;
     width: 14px;
   }
 
   .upload__edit-button {
-    &::before {
-      width: 275px;
-      bottom: -27px;
-      left: 0;
-    }
+    margin-bottom: 52px;
   }
 
   .upload__crop {
@@ -215,7 +257,7 @@
 
   .upload__button {
     padding: 15px 81px;
-    margin-top: 67px;
+    margin-top: 25px;
     margin-bottom: 24px;
   }
 
@@ -259,7 +301,7 @@
   .upload__buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 76px;
+    margin-top: 26px;
     margin-bottom: 24px;
   }
 
@@ -278,28 +320,55 @@
     height: auto;
   }
 
+  .upload__range--active,
+  .upload__range {
+    min-width: 288px;
+  }
+
   .upload__range-bar {
     width: 288px;
-    top: -60px;
-    left: 100px;
+    top: 20px;
+    left: 0;
   }
 
   .upload__range-control {
-    top: -66px;
-    left: 180px;
+    top: 15px;
+    left: 69px;
     height: 14px;
     width: 14px;
   }
 
-  .upload__edit-button {
-    &:nth-child(5)::before {
-      display: none;
+  .upload__edit-item {
+    &:nth-child(2) {
+      .upload__range-control {
+        left: 247px;
+      }
+    }
+
+    &:last-child {
+      margin-left: 5px;
+
+      .upload__range {
+        margin-left: 10px;
+      }
+
+      .upload__range-control {
+        left: 146px;
+      }
     }
 
     &::before {
       width: 410px;
-      bottom: -27px;
       left: 0;
+      top: 60px;
     }
+
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  .upload__edit-button {
+    margin-bottom: 29px;
   }
 }
