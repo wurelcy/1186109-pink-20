@@ -3,9 +3,9 @@
   max-width: 280px;
   margin: 0 auto;
   padding: 0;
-  margin-top: 42px;
+  margin-top: 33px;
   border: 0;
-  margin-bottom: 52px;
+  margin-bottom: 49px;
 }
 
 .feedback__legend {
@@ -21,6 +21,7 @@
 .feedback__field {
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   min-width: 280px;
   border: 2px solid $grey;
   border-radius: 1px;
@@ -43,7 +44,8 @@
     border-radius: 1px;
     min-width: 620px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-top: 0;
+    margin-bottom: 65px;
   }
 
   .feedback__legend {
@@ -52,20 +54,26 @@
   }
 
   .feedback__field {
-    margin-top: 42px;
-    margin-bottom: 53px;
+    margin-top: 32px;
+    margin-bottom: 50px;
     margin-left: 60px;
     min-width: 496px;
+    padding-top: 14px;
+    padding-left: 19px;
+    min-height: 192px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
     min-width: 940px;
+    margin-top: 2px;
   }
 
   .feedback__field {
+    margin-top: 27px;
+    margin-bottom: 40px;
     min-width: 816px;
-    min-height: 124px;
+    min-height: 128px;
   }
 }

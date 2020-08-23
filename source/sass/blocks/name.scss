@@ -2,7 +2,8 @@
   border: 0;
   margin: 0 auto;
   max-width: 280px;
-  margin-bottom: 44px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .name__field {
@@ -20,7 +21,9 @@
 .your-name {
   border: 2px solid $grey;
   border-radius: 1px;
-  padding: 21px;
+  padding: 23px;
+  padding-left: 19px;
+  margin-top: 5px;
   min-width: 276px;
 
   &::placeholder {
@@ -32,14 +35,18 @@
 
 @media (min-width: $tablet-width) {
   .name {
+    margin: 0;
     min-width: 640px;
-    margin-top: 82px;
+    margin-top: 55px;
+    margin-bottom: 8px;
+    padding: 0;
   }
 
   .name__field {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 45px;
 
     label {
       padding-left: 0;
@@ -59,11 +66,26 @@
     margin-bottom: 0;
   }
 
+  .your-name {
+    padding: 23px;
+    padding-bottom: 21px;
+    padding-left: 19px;
+    margin-top: 2px;
+  }
+
   .name__field {
-    margin-bottom: 58px;
+    margin-bottom: 50px;
+    margin-top: 11px;
 
     &:last-child {
+      margin-right: 0;
+      margin-left: auto;
       margin-bottom: 0;
+      max-width: 340px;
+
+      label {
+        display: none;
+      }
     }
   }
 }

@@ -32,10 +32,10 @@
   border-radius: 3px;
   min-width: 280px;
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 35px;
   color: $white;
   text-transform: uppercase;
-  padding: 12px 0;
+  padding: 14px 0;
 
   &:hover {
     background-color: $hovergreen;
@@ -48,7 +48,7 @@
 
 .contest-form__note {
   margin: 0 auto;
-  margin-bottom: 66px;
+  margin-bottom: 56px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -73,12 +73,13 @@
   }
 
   .contest-form__submit {
-    min-width: 296px;
     margin: 0;
-    margin-bottom: 86px;
+    min-width: 300px;
+    margin-bottom: 50px;
   }
 
   .contest-form__note {
+    margin-top: 18px;
     margin-right: 0;
   }
 }
@@ -86,10 +87,15 @@
 @media (min-width: $desktop-width) {
   .contest-form {
     max-width: 940px;
-    margin-top: 95px;
+    margin-top: 72px;
   }
 
   .contest-form__note--desktop {
     display: inline;
+  }
+
+  .contest-form__submit,
+  .contest-form__note {
+    margin-bottom: 35px;
   }
 }

@@ -15,8 +15,8 @@
     background-repeat: no-repeat;
     width: 157px;
     height: 320px;
-    bottom: -40px;
-    left: 80px;
+    bottom: -45px;
+    left: 82px;
     overflow: hidden;
     z-index: 1;
 
@@ -50,7 +50,8 @@
 }
 
 .advantages {
-  margin-top: 40px;
+  margin-top: 10px;
+  overflow: hidden;
   background: linear-gradient(-5deg, $lightgrey 79%, $white 79%, $white 79%);
 }
 
