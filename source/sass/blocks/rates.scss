@@ -10,7 +10,7 @@
 
 .rates__table {
   position: absolute;
-  left: -234px;
+  left: -218px;
   background-color: $white;
   border-collapse: collapse;
 }
@@ -26,6 +26,25 @@
 
   th {
     border: 2px solid $grey;
+    overflow: hidden;
+    position: relative;
+
+    &:nth-child(3)::before {
+      position: absolute;
+      content: "Хит";
+      height: 25px;
+      width: 115px;
+      font-size: 14px;
+      line-height: 30px;
+      background-color: $pink;
+      color: $white;
+      padding-top: -5px;
+      font-weight: normal;
+      text-transform: uppercase;
+      top: 16px;
+      left: -32px;
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -34,8 +53,8 @@
   font-size: 16px;
   line-height: 30px;
   margin: 0;
-  margin-top: 19px;
-  padding: 0 100px;
+  margin-top: 10px;
+  padding: 0 95px;
 }
 
 .rates__price {
@@ -44,7 +63,7 @@
   font-weight: 300;
   color: $white;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .rates__item {
@@ -54,7 +73,9 @@
   font-weight: normal;
   color: $greyblue;
   text-align: left;
-  padding: 22px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  padding-right: 0;
   padding-left: 20px;
   position: relative;
 
@@ -65,7 +86,7 @@
     height: 21px;
     background-color: $green;
     mask: url("../img/icon-yes-green.svg");
-    top: 22px;
+    top: 15px;
     right: 17px;
   }
 }
@@ -76,7 +97,7 @@
     height: 27px;
     background-color: $orange;
     mask: url("../img/icon-no.svg");
-    top: 22px;
+    top: 15px;
     right: 21px;
   }
 }
@@ -85,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 395px;
+  padding-top: 320px;
   max-width: 56px;
   align-self: center;
 }
@@ -103,6 +124,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .rates {
+    padding-top: 0;
+  }
+
   .rates__table {
     position: relative;
     left: 0;
@@ -112,7 +137,8 @@
 
   .rates__item-title {
     display: table-cell;
-    padding: 17px;
+    padding: 10px;
+    padding-top: 5px;
     padding-left: 15px;
     border: 2px solid $grey;
     font-size: 14px;
@@ -125,15 +151,19 @@
   }
 
   .rates__item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 0;
+
     &::after {
-      top: 22px;
+      top: 10px;
       right: 40%;
     }
   }
 
   .rates__item--no {
     &::after {
-      top: 22px;
+      top: 7px;
       right: 40%;
     }
   }
@@ -149,6 +179,13 @@
         border: 2px solid $lightgrey;
         border-bottom: 2px solid $grey;
       }
+
+      &:nth-child(3)::before {
+        height: 25px;
+        width: 115px;
+        top: 10px;
+        left: -40px;
+      }
     }
   }
 
@@ -158,12 +195,16 @@
 
   .rates__title {
     padding: 0;
-    min-width: 156px;
+    padding-top: 10px;
+    padding-left: 3px;
+    margin: 0;
+    margin-top: 0;
+    min-width: 152px;
     text-align: center;
   }
 
   .rates__price {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   .rates__mobile {
@@ -177,7 +218,7 @@
   }
 
   .rates__table {
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 
   .rates__title,
@@ -185,20 +226,35 @@
     min-width: 233px;
   }
 
+  .rates__title {
+    font-size: 18px;
+    padding-top: 19px;
+    padding-bottom: 0;
+  }
+
+  .rates__price {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
   .rates__item-title {
+    padding-top: 13px;
+    padding-bottom: 15px;
     font-size: 18px;
     padding-left: 22px;
   }
 
   .rates__item {
     &::after {
-      right: 45%;
+      top: 16px;
+      right: 100px;
     }
   }
 
   .rates__item--no {
     &::after {
-      right: 45%;
+      top: 15px;
+      right: 100px;
     }
   }
 }

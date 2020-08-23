@@ -5,7 +5,7 @@
   color: $greyblue;
   max-width: 280px;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 44px;
 }
 
 .form__fillin {
@@ -16,7 +16,7 @@
   .form {
     font-size: 18px;
     max-width: 490px;
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .form__fillin {
@@ -26,6 +26,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
+    margin-top: 92px;
     max-width: 756px;
   }
 }
