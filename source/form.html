@@ -173,16 +173,10 @@
             <p class="contest-contacts__number">
               <label for="your-number">Номер телефона</label>
               <input class="contest-contacts__your-number" id="your-number" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              <svg width="20" height="19" class="contest-contacts__icon">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
             </p>
             <p class="contest-contacts__email">
               <label for="your-email">Адрес почты</label>
               <input class="contest-contacts__your-email" id="your-email" type="email" name="email" placeholder="Введите почту *">
-              <svg width="18" height="13" class="contest-contacts__icon">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
             </p>
           </div>
         </fieldset>
@@ -192,54 +186,36 @@
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="selfie" type="checkbox" name="selfie" checked>
                 <label for="selfie">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Сделал селфи с акулой
                 </label>
               </li>
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="sunburn" type="checkbox" name="sunburn" checked>
                 <label for="sunburn">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Обгорел на пляже
                 </label>
               </li>
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="chuk" type="checkbox" name="chuk">
                 <label for="chuk">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Видел Чака Норриса
                 </label>
               </li>
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="souvenir" type="checkbox" name="souvenir">
                 <label for="souvenir">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Накупил сувениров
                 </label>
               </li>
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="tower" type="checkbox" name="tower" checked>
                 <label for="tower">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Удержал башню
                 </label>
               </li>
               <li class="achievements__item">
                 <input class="visually-hidden achievements__checkbox" id="hotel" type="checkbox" name="hotel">
                 <label for="hotel">
-                  <svg width="22" height="16" class="achievements__checkbox-svg">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>
                   Разгромил отель
                 </label>
               </li>
@@ -254,7 +230,7 @@
       </form>
     </main>
     <footer class="page-footer container">
-      <a class="page-footer__logo">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
         <picture>
           <source srcset="img/logo-pink-blue-desktop.svg" media="(min-width: 960px)">
           <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink footer logotype">
@@ -274,7 +250,10 @@
           </li>
         </ul>
       </div>
-      <p class="page-footer__copyright">Разработано</p>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link"href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </p>
     </footer>
 
     <section class="pop-up modal-success">

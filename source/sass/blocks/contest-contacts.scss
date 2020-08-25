@@ -71,6 +71,20 @@
     margin-left: 55px;
     position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 19px;
+      background-color: $pink;
+      mask: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 23px;
+      right: 20px;
+      z-index: 2;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -96,8 +110,11 @@
   .contest-contacts__email {
     margin-bottom: 10px;
 
-    .contest-contacts__icon {
-      top: 25px;
+    &::before {
+      mask: url("../img/icon-mail.svg");
+      width: 18px;
+      height: 13px;
+      top: 26px;
     }
   }
 
