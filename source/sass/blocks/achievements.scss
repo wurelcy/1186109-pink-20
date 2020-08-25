@@ -39,14 +39,6 @@
   }
 }
 
-.achievements__checkbox-svg {
-  display: none;
-  position: absolute;
-  left: -27px;
-  top: 9px;
-  fill: $pink;
-}
-
 .achievements__checkbox {
   & + label::before {
     position: absolute;
@@ -68,10 +60,20 @@
     border-color: $pink;
   }
 
-  &:checked + label {
-    .achievements__checkbox-svg {
-      display: block;
-    }
+  & + label::after {
+    display: none;
+    position: absolute;
+    content: "";
+    left: -29px;
+    top: 6px;
+    height: 16px;
+    width: 22px;
+    background-color: $pink;
+    mask: url("../img/icon-yes.svg");
+  }
+
+  &:checked + label::after {
+    display: block;
   }
 }
 

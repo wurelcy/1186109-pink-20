@@ -70,8 +70,10 @@
   padding-right: 40px;
   margin-bottom: 50px;
   margin-top: 20px;
+}
 
-  &::after {
+.page-footer__copyright-link {
+  &::before {
     content: "";
     position: absolute;
     width: 27px;

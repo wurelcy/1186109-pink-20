@@ -2,7 +2,7 @@
   background: linear-gradient(-5deg, $lightgrey 10%, $white 10%, $white 10%);
   text-align: center;
   margin-top: 41px;
-  padding-bottom: 165px;
+  padding-bottom: 121px;
 
   .container {
     width: 280px;
@@ -24,6 +24,7 @@
 
 .reviews__message {
   margin: 0;
+  margin-bottom: 44px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -32,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 56px;
+  min-width: 56px;
   align-self: center;
 }
 
