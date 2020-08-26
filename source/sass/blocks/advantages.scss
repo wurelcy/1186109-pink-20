@@ -151,7 +151,6 @@
     font-size: 40px;
     line-height: 54px;
     margin: 0;
-    //margin-left: 12px;
 
     .advantages &:last-child {
       margin-top: 0;
@@ -175,10 +174,6 @@
     margin-left: 10px;
 
     &::before {
-      display: none;
-    }
-
-    &::after {
       content: "";
       position: absolute;
       background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
