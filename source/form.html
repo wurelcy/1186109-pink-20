@@ -139,11 +139,11 @@
           <fieldset class="name">
             <p class="name__field">
               <label for="your-name">Фамилия:</label>
-              <input class="your-name" id="your-name" type="text" name="name" placeholder="Укажите фамилию *">
+              <input class="your-name" id="your-last-name" type="text" name="name" placeholder="Укажите фамилию *" required>
             </p>
             <p class="name__field">
               <label for="your-last-name">Имя:</label>
-              <input class="your-name" id="your-last-name" type="text" name="name" placeholder="Введите ваше имя *">
+              <input class="your-name" id="your-name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </p>
             <p class="name__field">
               <label for="your-patronymic-name">Отчество:</label>
@@ -176,7 +176,7 @@
             </p>
             <p class="contest-contacts__email">
               <label for="your-email">Адрес почты</label>
-              <input class="contest-contacts__your-email" id="your-email" type="email" name="email" placeholder="Введите почту *">
+              <input class="contest-contacts__your-email" id="your-email" type="email" name="email" placeholder="Введите почту *" required>
             </p>
           </div>
         </fieldset>
@@ -225,7 +225,7 @@
           <legend class="feedback__legend">Опишите свои эмоции</legend>
           <textarea class="feedback__field" id="feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button type="submit" name="button" class="contest-form__submit">Отправить форму</button>
+        <button type="submit" class="contest-form__submit">Отправить форму</button>
         <p class="contest-form__note"><span class="contest-form__required">*</span> — обязательные<span class="contest-form__note--desktop"> для заполнения</span> поля</p>
       </form>
     </main>
@@ -276,5 +276,7 @@
       </div>
     </section>
 
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
