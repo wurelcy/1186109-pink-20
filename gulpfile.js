@@ -36,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -80,6 +80,38 @@ const webp = () => {
 
 exports.webp = webp;
 
+//Imagemin
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg, png, svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.svgo()
+    ]))
+}
+
+exports.images = images;
+
+//build
+
+const build = () => gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  html
+);
+
+/*gulp.task("build", gulp.series("styles", "sprite", "html"));
+gulp.task("start", gulp.series("build", "server"));*/
+
+//Clean
+
+const clean = () => {
+  return del("build");
+}
+
 //Copy
 
 const copy = () => {
@@ -95,33 +127,3 @@ const copy = () => {
 }
 
 exports.copy = copy;
-
-
-//Imagemin
-
-const images = () => {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.svgo()
-    ]))
-}
-
-exports.images = images;
-
-//Clean
-
-const clean = () => {
-  return del("build");
-}
-
-//build
-
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "html"
-);
