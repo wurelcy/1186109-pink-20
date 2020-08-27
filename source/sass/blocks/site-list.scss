@@ -20,6 +20,10 @@
       margin-right: 0;
     }
 
+    &:first-child a {
+      box-shadow: 0px -1px 0px $black, inset 0px 1px 0px rgba($white, 0.15);
+    }
+
     &--active a {
       border-bottom: 2px solid $white;
     }

@@ -12,6 +12,10 @@
   display: none;
 }
 
+.form__failure {
+  border-color: $pink;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     font-size: 18px;
