@@ -8,12 +8,12 @@ navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-    navMain.classList.remove('page-header__upper-panel-wrapper--closed');
-    navMain.classList.add('page-header__upper-panel-wrapper--opened');
+    header.classList.remove('page-header__upper-panel-wrapper--closed');
+    header.classList.add('page-header__upper-panel-wrapper--opened');
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
-    navMain.classList.add('page-header__upper-panel-wrapper--closed');
-    navMain.classList.remove('page-header__upper-panel-wrapper--opened');
+    header.classList.add('page-header__upper-panel-wrapper--closed');
+    header.classList.remove('page-header__upper-panel-wrapper--opened');
   }
 });

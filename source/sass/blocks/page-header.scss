@@ -205,8 +205,12 @@
 }
 
 @media (max-width: $desktop-width - 1px) {
-  .page-header__upper-panel-wrapper--opened {
-    background-color: $greyblue;
+  .photo-header,
+  .form-header,
+  .main-header {
+    .page-header__upper-panel-wrapper--opened {
+      background-color: $greyblue;
+    }
   }
 
   .page-header__upper-panel-wrapper .container {
