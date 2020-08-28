@@ -81,7 +81,7 @@
       background-position: center;
       background-repeat: no-repeat;
       top: 23px;
-      right: 20px;
+      right: 85px;
       z-index: 2;
     }
 
@@ -89,10 +89,10 @@
       position: absolute;
       content: "";
       width: 59px;
-      height: 58px;
+      height: 60px;
       background-color: $grey;
       top: 2px;
-      right: 62px;
+      right: 67px;
     }
 
     label {
@@ -149,6 +149,10 @@
   .contest-contacts__number {
     margin-top: 12px;
     margin-left: 57px;
+
+    &::before {
+      right: 20px;
+    }
 
     &::after {
       width: 59px;
