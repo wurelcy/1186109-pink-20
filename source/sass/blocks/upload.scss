@@ -85,6 +85,10 @@
   border-radius: 50%;
   height: 14px;
   width: 14px;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 .upload__range-bar {
@@ -297,6 +301,12 @@
   .upload__button-cancel {
     padding: 15px 90px;
     margin-bottom: 58px;
+  }
+
+  .upload__tool {
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

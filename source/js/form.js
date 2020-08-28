@@ -8,6 +8,24 @@ var failureClose = document.querySelector(".modal-failure__close-btn");
 var userName = document.getElementById("your-name");
 var userLastName = document.getElementById("your-last-name");
 var userEmail = document.getElementById("your-email");
+var userNumber = document.getElementById("your-number");
+
+submit.addEventListener("click", function (evt) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var phoneReg = /((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+  if ((reg.test(userEmail.value) == false) && (phoneReg.test(userNumber.value) == false)) {
+    evt.preventDefault();
+    alert("Пожалуйста, введите корректный email и телефон.");
+  }
+  else if (reg.test(userEmail.value) == false) {
+    evt.preventDefault();
+    alert("Пожалуйста, введите корректный email.");
+  }
+  else if (phoneReg.test(userNumber.value) == false) {
+    evt.preventDefault();
+    alert("Пожалуйста, введите корректный телефон.");
+  }
+});
 
 submit.addEventListener("click", function (evt) {
   if (!userName.value || !userEmail.value || !userLastName.value) {
