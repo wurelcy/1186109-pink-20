@@ -60,6 +60,9 @@
 }
 
 .gallery__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: $lightgrey;
   margin-top: 19px;
 
@@ -78,10 +81,6 @@
   padding-left: 17px;
   margin-top: 0;
   padding-bottom: 2px;
-}
-
-.gallery__tablet-break {
-  display: none;
 }
 
 .gallery__top {
@@ -103,10 +102,6 @@
     top: 0;
     right: 20px;
     z-index: 3;
-  }
-
-  .gallery__author-likes {
-    display: none;
   }
 
   .gallery__item {
@@ -180,9 +175,9 @@
     }
   }
 
-  .gallery__author-likes--mobile {
+  /*.gallery__author-likes--mobile {
     display: none;
-  }
+  }*/
 
   .gallery__author-comment {
     margin: 0;
@@ -213,6 +208,11 @@
       padding-left: 31px;
     }
 
+    .gallery__author-comment {
+      margin-top: 10px;
+      order: 2;
+    }
+
     .gallery__item {
       text-align: left;
       margin: 0 auto;
@@ -226,10 +226,19 @@
       vertical-align: center;
     }
 
+    .gallery__description {
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 44px;
+      margin-bottom: 50px;
+    }
+
     .gallery__author-likes {
       display: inline-block;
       margin-top: auto;
-      margin-left: 298px;
+      order: 1;
+      margin-right: 59px;
       padding: 0;
 
       &::before {
@@ -239,18 +248,16 @@
     }
   }
 
-  .gallery__tablet-break {
-    display: inline;
-  }
-
-  .gallery__mobile-break {
-    display: none;
-  }
-
   .gallery__description {
+    margin: 0 auto;
     font-size: 18px;
     margin-top: 90px;
     margin-bottom: 77px;
+    max-width: 450px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -258,6 +265,7 @@
   .gallery__description {
     margin-top: 91px;
     margin-bottom: 89px;
+    max-width: 600px;
   }
 
   .gallery__author-comment {
@@ -323,9 +331,9 @@
     }
 
     .gallery__author-likes {
-      margin-top: 0;
+      margin-top: 32px;
       padding: 0;
-      margin-left: 620px;
+      margin-right: 60px;
 
       &::before {
         top: 0;
@@ -335,16 +343,6 @@
 
     br {
       display: none;
-    }
-  }
-
-  .gallery__tablet-break {
-    display: none;
-  }
-
-  .gallery__mobile-break {
-    &:last-child {
-      display: block;
     }
   }
 }

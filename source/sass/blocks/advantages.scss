@@ -1,12 +1,15 @@
 .advantages__list {
   padding: 0;
-  padding-bottom: 290px;
+  padding-bottom: 279px;
   position: relative;
   list-style: none;
-  margin: 0;
-  margin-top: 113px;
+  margin-top: 109px;
   display: flex;
   flex-direction: column;
+
+  br {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -15,8 +18,8 @@
     background-repeat: no-repeat;
     width: 157px;
     height: 320px;
-    bottom: -45px;
-    left: 82px;
+    bottom: -55px;
+    left: 62px;
     overflow: hidden;
     z-index: 1;
 
@@ -27,15 +30,14 @@
   }
 }
 
-.advantages__tablet-break,
-.advantages__desktop-break {
-  display: none;
+.advantages__item {
+  max-width: 280px;
 }
 
 .advantages__wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: 280px;
 }
 
 @media (max-width: $desktop-width - 1) {
@@ -52,7 +54,7 @@
 .advantages {
   margin-top: 10px;
   overflow: hidden;
-  background: linear-gradient(-5deg, $lightgrey 79%, $white 79%, $white 79%);
+  background: linear-gradient(-5deg, $lightgrey 77%, $white 77%, $white 77%);
 }
 
 .advantages__title {
@@ -71,10 +73,6 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-
-  .advantages__mobile-break {
-    display: inline;
-  }
 }
 
 .advantages__slogan {
@@ -90,7 +88,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     margin-top: 45px;
-    background: linear-gradient(-5deg, $lightgrey 66%, $white 66%, $white 66%);
+    background: linear-gradient(-5deg, $lightgrey 67%, $white 67%, $white 67%);
   }
 
   .advantages__wrapper {
@@ -105,9 +103,14 @@
   .advantages__list {
     grid-column: 2 / 2;
     position: relative;
+    margin: 0;
     margin-top: 104px;
     margin-left: 5px;
     padding-bottom: 5px;
+
+    br {
+      display: inline;
+    }
 
     &::before {
       grid-column: 1 / 2;
@@ -127,24 +130,23 @@
     }
   }
 
+  .advantages__item {
+    max-width: 310px;
+  }
+
   .advantages__title {
     margin: 0;
     text-align: left;
+
+    br {
+      display: none;
+    }
   }
 
   .advantages__description {
     text-align: left;
     margin-top: 12px;
     margin-bottom: 35px;
-
-    .advantages__tablet-break {
-      display: inline;
-    }
-
-    .advantages__desktop-break,
-    .advantages__mobile-break {
-      display: none;
-    }
   }
 
   .advantages__slogan {
@@ -164,21 +166,32 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+  }
+
   .advantages__grid {
     display: block;
   }
 
   .advantages__list {
     margin-top: 415px;
+    margin-bottom: 15px;
     flex-direction: row;
     margin-left: 10px;
+
+    br {
+      display: none;
+    }
 
     &::before {
       content: "";
       position: absolute;
       background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 9px 0, 331px 0, 655px 0;
+      background-position: 0 0, 320px 0, 645px 0;
       background-size: contain, contain, contain;
       width: 920px;
       height: 302px;
@@ -191,49 +204,42 @@
     }
   }
 
-  .advantages__wrapper {
-    margin: 0 auto;
-    padding: 0;
-    width: 960px;
-  }
-
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+
+    br {
+      display: inline;
+    }
   }
 
   .advantages__description {
     text-align: center;
     margin-top: 22px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
 
-    br,
-    .advantages__tablet-break {
+    br {
       display: none;
     }
-
-    .advantages__desktop-break {
-      display: inline;
-    }
-  }
-
-  .advantages__mobile-break {
-    display: none;
   }
 
   .advantages__item {
     position: relative;
-    margin-left: 15px;
+    margin-left: 22px;
+    margin-right: 47px;
+    max-width: 245px;
 
     &:nth-child(3) {
       margin-left: 10px;
+      margin-right: 0;
     }
 
     &:nth-child(2) {
       margin-left: 30px;
-      margin-right: 5px;
+      margin-right: 65px;
     }
   }
 

@@ -141,7 +141,7 @@
     <main class="page-main">
       <section class="gallery">
         <h2 class="visually-hidden">Галерея</h2>
-        <p class="gallery__description">Взгляните на фотографии, которые<br class="gallery__mobile-break"> выкладывают<br class="gallery__tablet-break"> пользователи!<br class="gallery__mobile-break"> Видите, как не хватает ваших?</p>
+        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         <div class="gallery__top">
           <a href="#">
             <picture>
@@ -155,9 +155,8 @@
           </a>
           <div class="gallery__item">
             <p class="gallery__author-info">Анна <span class="gallery__author-time">(5 минут назад)</span></p>
-            <p class="gallery__author-likes">Нравится:<span> 215</span></p>
             <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__author-likes--mobile">Нравится:<span> 215</span></p>
+            <p class="gallery__author-likes">Нравится:<span> 215</span></p>
           </div>
         </div>
         <ul class="gallery__list">
@@ -256,7 +255,7 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузите Ваше фото</h2>
         <p class="upload__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__wrapper">
+        <form class="upload__wrapper" action="https://echo.htmlacademy.ru/" method="post">
           <div class="upload__grid">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -270,13 +269,13 @@
               <ul class="upload__edit">
                 <li class="upload__edit-item">
                   <button type="button" class="upload__edit-button">
-                    <svg width="45" height="45" class="upload__crop upload__tool--active">
+                    <svg width="45" height="45" class="upload__crop upload__tool upload__tool--active">
                       <use xlink:href="#icon-editor-crop"></use>
                     </svg>
                   </button>
-                  <div class="upload__range--active">
+                  <div class="upload__range">
                     <div class="upload__range-bar"></div>
-                    <div class="upload__range-control"></div>
+                    <button type="button" class="upload__range-control"></button>
                   </div>
                 </li>
                 <li class="upload__edit-item">
@@ -287,7 +286,7 @@
                   </button>
                   <div class="upload__range">
                     <div class="upload__range-bar"></div>
-                    <div class="upload__range-control"></div>
+                    <button type="button" class="upload__range-control"></button>
                   </div>
                 </li>
                 <li class="upload__edit-item">
@@ -298,17 +297,17 @@
                   </button>
                   <div class="upload__range">
                     <div class="upload__range-bar"></div>
-                    <div class="upload__range-control"></div>
+                    <button type="button" class="upload__range-control"></button>
                   </div>
                 </li>
               </ul>
               <div class="upload__buttons">
-                <button class="upload__button" type="button">Запостить</button>
+                <button class="upload__button" type="submit">Запостить</button>
                 <button class="upload__button-cancel disabled" type="button">Отмена</button>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer container">

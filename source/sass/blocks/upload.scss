@@ -38,6 +38,12 @@
   margin-right: 4px;
   margin-top: 35px;
 
+  &:first-child {
+    .upload__range {
+      display: block;
+    }
+  }
+
   &::before {
     display: none;
     position: absolute;
@@ -45,7 +51,7 @@
     width: 320px;
     height: 1px;
     background-color: rgba($greyblue, 0.1);
-    bottom: -34px;
+    bottom: -20px;
     left: -57px;
   }
 
@@ -64,27 +70,26 @@
   }
 }
 
-.upload__range--active,
 .upload__range {
+  display: none;
   margin: 0;
   padding: 0;
   position: relative;
   min-height: 20px;
 }
 
-.upload__range {
-  display: none;
+.upload__range-active {
+  display: block;
 }
 
 .upload__range-control {
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 182px;
   border: 2px solid $pink;
   background-color: $lightgrey;
   border-radius: 50%;
-  height: 14px;
-  width: 14px;
+  padding: 5px 5px;
 
   &:active {
     background-color: $pink;
@@ -99,6 +104,7 @@
   background-color: $greyblue;
   top: -2px;
   left: -10px;
+  z-index: 0;
 }
 
 .upload__button {
@@ -157,16 +163,17 @@
   }
 }
 
-.upload__tool--active {
-  fill: $pink;
-}
-
 .upload__tool {
   opacity: 0.3;
 
   &:hover {
     opacity: 0.5;
   }
+}
+
+.upload__tool--active {
+  opacity: 1;
+  fill: $pink;
 }
 
 @media (min-width: $tablet-width) {
@@ -223,7 +230,7 @@
     &::before {
       display: block;
       width: 275px;
-      bottom: 30px;
+      bottom: 0;
       left: 0;
     }
 
@@ -244,17 +251,14 @@
 
   .upload__range {
     display: block;
-  }
-
-  .upload__range--active,
-  .upload__range {
+    margin-left: 2px;
     min-width: 202px;
   }
 
   .upload__range-bar {
     width: 202px;
     top: 12px;
-    left: 2px;
+    left: 0;
   }
 
   .upload__range-control {
@@ -377,20 +381,19 @@
     height: auto;
   }
 
-  .upload__range--active,
   .upload__range {
     min-width: 288px;
+    margin-left: 19px;
   }
 
   .upload__range-bar {
     width: 288px;
     top: 23px;
-    left: 19px;
   }
 
   .upload__range-control {
     top: 17px;
-    left: 88px;
+    left: 68px;
     height: 14px;
     width: 14px;
   }
@@ -417,6 +420,10 @@
         top: 17px;
       }
 
+      .upload__range {
+        margin-left: 0;
+      }
+
       .upload__range-bar {
         top: 23px;
         left: 18px;
@@ -428,16 +435,15 @@
       margin-left: 8px;
 
       .upload__range {
-        margin-left: 10px;
+        margin-left: 25px;
       }
 
       .upload__range-bar {
         top: 22px;
-        left: 18px;
       }
 
       .upload__range-control {
-        left: 177px;
+        left: 164px;
         top: 16px;
       }
     }
