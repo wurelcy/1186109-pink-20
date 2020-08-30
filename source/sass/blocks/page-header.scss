@@ -195,8 +195,8 @@
 
   .main-header {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: 660px 545px, cover;
-    background-position: 0% 100%, center;
+    background-size: 106%, cover;
+    background-position: -19px 100%, center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");

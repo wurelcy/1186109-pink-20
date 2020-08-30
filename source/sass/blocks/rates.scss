@@ -1,7 +1,7 @@
 .rates {
   background-color: $lightgrey;
   padding-top: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 45px;
   text-transform: uppercase;
   position: relative;
   max-width: 100%;
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 320px;
+  padding-top: 375px;
   max-width: 56px;
   align-self: center;
 }
@@ -196,10 +196,10 @@
       }
 
       &:nth-child(3)::before {
-        height: 25px;
+        height: 20px;
         width: 115px;
         top: 10px;
-        left: -40px;
+        left: -35px;
       }
     }
   }
@@ -239,6 +239,15 @@
   .rates__title,
   .rates__item-title {
     min-width: 233px;
+  }
+
+  .rates__table-head {
+    th {
+      &:nth-child(3)::before {
+        top: 20px;
+        left: -30px;
+      }
+    }
   }
 
   .rates__title {

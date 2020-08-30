@@ -421,12 +421,12 @@
       }
 
       .upload__range {
-        margin-left: 0;
+        margin-left: 18px;
       }
 
       .upload__range-bar {
         top: 23px;
-        left: 18px;
+        left: 0;
       }
     }
 
@@ -435,11 +435,12 @@
       margin-left: 8px;
 
       .upload__range {
-        margin-left: 25px;
+        margin-left: 28px;
       }
 
       .upload__range-bar {
         top: 22px;
+        left: 0;
       }
 
       .upload__range-control {
