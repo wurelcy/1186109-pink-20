@@ -8,8 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: $white;
-    mask: url("../img/bg-triangle-white-footer.svg");
+    background-image: url("../img/bg-triangle-white-footer.svg");
     top: -20px;
     left: -130px;
     width: 600px;
