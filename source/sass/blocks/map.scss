@@ -74,9 +74,13 @@
     margin-bottom: 30px;
 
     &::before {
+      width: 1200px;
+      height: 103px;
+      background-repeat: no-repeat;
+      background-size: contain;
       top: 0;
       left: 50%;
-      margin-left: -300px;
+      margin-left: -500px;
     }
 
     .map__image {
