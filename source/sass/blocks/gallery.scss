@@ -40,11 +40,12 @@
 }
 
 .gallery__author-likes {
+  margin: 0;
   font-size: 12px;
   color: $pink;
   text-transform: uppercase;
   padding-left: 48px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   position: relative;
 
   &::before {
@@ -62,16 +63,17 @@
 .gallery__item {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   background-color: $lightgrey;
-  margin-top: 19px;
+  margin-top: 21px;
 
   &:nth-child(5) {
     margin-top: 20px;
   }
 
   &:nth-child(6) {
-    margin-top: 21px;
+    margin-top: 23px;
   }
 }
 
@@ -108,26 +110,6 @@
     text-align: left;
     margin: 0 auto;
     max-width: 280px;
-  }
-}
-
-.gallery__author-likes--mobile {
-  font-size: 12px;
-  color: $pink;
-  text-transform: uppercase;
-  padding-left: 48px;
-  padding-bottom: 24px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 12px;
-    background-color: $pink;
-    mask: url("../img/icon-heart.svg") no-repeat center;
-    top: 0;
-    left: 17px;
   }
 }
 
@@ -175,10 +157,6 @@
     }
   }
 
-  /*.gallery__author-likes--mobile {
-    display: none;
-  }*/
-
   .gallery__author-comment {
     margin: 0;
     padding-left: 29px;
@@ -191,7 +169,10 @@
   }
 
   .gallery__author-image {
-    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .gallery__top {
@@ -208,12 +189,18 @@
       padding-left: 31px;
     }
 
+    .gallery__author-image {
+      img {
+        height: 509px;
+      }
+    }
+
     .gallery__author-comment {
-      margin-top: 10px;
       order: 2;
     }
 
     .gallery__item {
+      flex-direction: row;
       text-align: left;
       margin: 0 auto;
       max-width: 620px;
@@ -236,8 +223,8 @@
 
     .gallery__author-likes {
       display: inline-block;
-      margin-top: auto;
       order: 1;
+      margin-top: 25px;
       margin-right: 59px;
       padding: 0;
 
@@ -286,7 +273,7 @@
 
     .gallery__item {
       min-height: 555px;
-      margin-top: 30px;
+      margin-top: 33px;
 
       &:nth-child(1) {
         margin-top: 32px;
@@ -304,6 +291,7 @@
     .gallery__author-likes {
       padding-left: 28px;
       padding-bottom: 0;
+      margin-bottom: 28px;
 
       &::before {
         top: -1px;
@@ -313,6 +301,20 @@
   }
 
   .gallery__top {
+    .gallery__author-image {
+      img {
+        height: 506px;
+      }
+    }
+
+    &::before {
+      right: 130px;
+    }
+
+    .gallery__author-info {
+      padding-left: 26px;
+    }
+
     .gallery__item {
       padding-top: 0;
       max-width: 940px;
@@ -331,7 +333,7 @@
     }
 
     .gallery__author-likes {
-      margin-top: 32px;
+      margin-top: 27px;
       padding: 0;
       margin-right: 60px;
 

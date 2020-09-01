@@ -1,5 +1,5 @@
 .upload {
-  margin-top: 39px;
+  margin-top: 42px;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -353,9 +353,8 @@
   }
 
   .upload__button-cancel {
-    padding: 15px 52px;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 16px 48px;
+    margin: 0;
   }
 
   .upload__buttons {
@@ -393,7 +392,7 @@
 
   .upload__range-control {
     top: 17px;
-    left: 68px;
+    left: 70px;
     height: 14px;
     width: 14px;
   }
@@ -416,7 +415,7 @@
       }
 
       .upload__range-control {
-        left: 263px;
+        left: 246px;
         top: 17px;
       }
 
@@ -444,7 +443,7 @@
       }
 
       .upload__range-control {
-        left: 164px;
+        left: 160px;
         top: 16px;
       }
     }

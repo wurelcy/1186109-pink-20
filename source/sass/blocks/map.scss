@@ -31,19 +31,6 @@
 .map__image {
   margin: auto;
   max-width: 320px;
-  position: relative;
-
-  /*&::after {
-    position: absolute;
-    content: "";
-    height: 36px;
-    width: 36px;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 15px;
-    left: 15px;
-  }*/
 }
 
 @media (min-width: $tablet-width) {
