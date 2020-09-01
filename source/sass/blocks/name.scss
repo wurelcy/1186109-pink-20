@@ -46,7 +46,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-top: 18px;
+    margin-bottom: 51px;
 
     label {
       padding-left: 0;
@@ -56,6 +57,9 @@
 
   .your-name {
     flex-grow: 1;
+    margin-top: 0;
+    padding: 22px;
+    padding-left: 19px;
   }
 }
 

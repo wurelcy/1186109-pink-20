@@ -147,17 +147,16 @@
     margin-left: 0;
 
     &::after {
-      width: 1050px;
+      width: 935px;
       height: 645px;
       top: -241px;
       left: 15px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-size: 100%;
+      background-size: cover;
       z-index: 1;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
-        background-size: 80%;
       }
     }
   }

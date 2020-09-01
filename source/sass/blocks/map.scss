@@ -63,9 +63,10 @@
     &::before {
       width: 1200px;
       height: 103px;
+      background-image: url("../img/triangle-white-footer.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      top: 0;
+      top: -20px;
       left: 50%;
       margin-left: -500px;
     }
