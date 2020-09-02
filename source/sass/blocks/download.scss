@@ -108,10 +108,10 @@
     &::after {
       width: 660px;
       height: 545px;
-      top: -134px;
-      left: -20px;
+      top: -164px;
+      left: -40px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-size: 100%;
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");

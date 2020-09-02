@@ -8,11 +8,14 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    top: -20px;
-    left: -130px;
-    width: 600px;
-    height: 62px;
+    background-image: url("../img/triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -95px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 123px;
     z-index: 2;
   }
 }
@@ -40,8 +43,7 @@
     margin-top: 30px;
 
     &::before {
-      top: -1px;
-      left: 35px;
+      top: -65px;
     }
   }
 
@@ -58,17 +60,9 @@
   .map {
     margin-top: 20px;
     max-height: 502px;
-    margin-bottom: 30px;
 
     &::before {
-      width: 1200px;
-      height: 103px;
-      background-image: url("../img/triangle-white-footer.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
       top: -20px;
-      left: 50%;
-      margin-left: -500px;
     }
 
     .map__image {
