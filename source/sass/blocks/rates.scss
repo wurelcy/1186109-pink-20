@@ -1,7 +1,7 @@
 .rates {
   background-color: $lightgrey;
   padding-top: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   text-transform: uppercase;
   position: relative;
   max-width: 100%;
@@ -11,6 +11,7 @@
 .rates__table {
   position: absolute;
   left: -218px;
+  margin-top: 50px;
   background-color: $white;
   border-collapse: collapse;
 }
@@ -32,6 +33,9 @@
     &:nth-child(3)::before {
       position: absolute;
       content: "Хит";
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 25px;
       width: 115px;
       font-size: 14px;
@@ -106,7 +110,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 320px;
+  padding-top: 375px;
   max-width: 56px;
   align-self: center;
 }
@@ -116,16 +120,30 @@
   border-radius: 50%;
   background-color: rgba($greyblue, 0.3);
   padding: 3px;
+
+  &:hover {
+    background-color: rgba($greyblue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($greyblue, 0.1);
+  }
 }
 
 .rates__button--active {
   border: 3px solid $greyblue;
   background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .rates {
     padding-top: 0;
+    padding-bottom: 50px;
   }
 
   .rates__table {
@@ -181,10 +199,10 @@
       }
 
       &:nth-child(3)::before {
-        height: 25px;
+        height: 20px;
         width: 115px;
-        top: 10px;
-        left: -40px;
+        top: 15px;
+        left: -37px;
       }
     }
   }
@@ -224,6 +242,17 @@
   .rates__title,
   .rates__item-title {
     min-width: 233px;
+  }
+
+  .rates__table-head {
+    th {
+      &:nth-child(3)::before {
+        height: 23px;
+        width: 115px;
+        top: 22px;
+        left: -28px;
+      }
+    }
   }
 
   .rates__title {

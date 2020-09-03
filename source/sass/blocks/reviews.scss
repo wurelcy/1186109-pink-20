@@ -2,7 +2,7 @@
   background: linear-gradient(-5deg, $lightgrey 10%, $white 10%, $white 10%);
   text-align: center;
   margin-top: 41px;
-  padding-bottom: 121px;
+  padding-bottom: 70px;
 
   .container {
     width: 280px;
@@ -24,7 +24,7 @@
 
 .reviews__message {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  min-width: 56px;
+  min-width: 60px;
   align-self: center;
 }
 
@@ -42,11 +42,24 @@
   border-radius: 50%;
   background-color: rgba($greyblue, 0.3);
   padding: 3px;
+
+  &:hover {
+    background-color: rgba($greyblue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($greyblue, 0.1);
+  }
 }
 
 .reviews__button--active {
   border: 3px solid $greyblue;
   background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 .reviews__author {
@@ -63,33 +76,13 @@
   margin-bottom: 49px;
 }
 
-.reviews-btn {
-  display: block;
-  border: none;
-  background-color: rgba($greyblue, 0.3);
-  position: absolute;
-  width: 22px;
-  height: 41px;
-  top: 29px;
-  cursor: pointer;
-}
-
-.previous-btn {
-  left: -125px;
-  mask: url("../img/icon-review-arrow-left.svg");
-}
-
-.next-btn {
-  mask: url("../img/icon-review-arrow-right.svg");
-  right: -125px;
-}
 
 @media (min-width: $tablet-width) {
   .reviews {
-    background: linear-gradient(-5deg, $lightgrey 20%, $white 20%, $white 20%);
+    background: linear-gradient(-5deg, $lightgrey 25%, $white 25%, $white 25%);
     text-align: center;
     margin-top: 25px;
-    padding-bottom: 108px;
+    padding-bottom: 111px;
 
     .container {
       width: 620px;
@@ -102,12 +95,13 @@
     line-height: 30px;
     color: $greyblue;
     margin-top: 0;
-    margin-bottom: 49px;
+    margin-bottom: 35px;
   }
 
   .reviews__message {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 0;
   }
 
   .reviews__author {
@@ -118,15 +112,11 @@
     margin-top: 35px;
     margin-bottom: 0;
   }
-
-  .reviews__controls {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    background: linear-gradient(-5deg, $lightgrey 35%, $white 35%, $white 35%);
+    background: linear-gradient(-5deg, $lightgrey 31%, $white 31%, $white 31%);
     text-align: center;
     margin-top: 186px;
     padding-bottom: 105px;
@@ -148,6 +138,10 @@
     }
   }
 
+  .reviews__controls {
+    display: none;
+  }
+
   .reviews__message {
     margin-bottom: 35px;
   }
@@ -161,5 +155,43 @@
   .reviews__author-info {
     font-size: 18px;
     margin-bottom: 80px;
+  }
+
+
+  .reviews-btn {
+    display: block;
+    border: none;
+    background-color: rgba($greyblue, 0.3);
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 29px;
+    cursor: pointer;
+  }
+
+  .previous-btn {
+    left: -125px;
+    mask: url("../img/icon-review-arrow-left.svg");
+
+    &:hover {
+      background-color: rgba($greyblue, 0.6);
+    }
+
+    &:active {
+      background-color: rgba($greyblue, 0.1);
+    }
+  }
+
+  .next-btn {
+    mask: url("../img/icon-review-arrow-right.svg");
+    right: -125px;
+
+    &:hover {
+      background-color: rgba($greyblue, 0.6);
+    }
+
+    &:active {
+      background-color: rgba($greyblue, 0.1);
+    }
   }
 }

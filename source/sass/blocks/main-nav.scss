@@ -42,17 +42,12 @@
     min-height: 0;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-nav--nojs .site-list {
     display: block;
   }
 
   .main-nav--nojs .site-list__item a {
     padding: 25px 21px;
-  }
-
-  .main-nav--nojs .user-list__item {
-    display: block;
-    background-color: $greyblue;
   }
 }
 
@@ -69,6 +64,7 @@
     flex-wrap: wrap;
     max-width: 620px;
     margin: 0;
+    margin-top: 5px;
   }
 
   .main-nav__list a {

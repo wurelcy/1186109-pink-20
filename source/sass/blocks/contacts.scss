@@ -17,6 +17,12 @@
   margin-top: 18px;
 }
 
+.contacts__item {
+  &:last-child {
+    margin-top: 3px;
+  }
+}
+
 .contacts__info {
   text-align: center;
   font-weight: 300;
@@ -48,6 +54,10 @@
     align-items: center;
   }
 
+  .contacts__how-to {
+    margin-bottom: 5px;
+  }
+
   .contacts__item {
     margin-left: 48px;
     margin-right: 98px;
@@ -60,6 +70,10 @@
       margin: 0;
       margin-top: 25px;
       flex-grow: 1;
+
+      .contacts__how-to {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -89,6 +103,11 @@
       flex-grow: 0;
       margin-left: 111px;
       margin-top: 27px;
+
+      .contacts__how-to {
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
     }
 
     &:nth-child(2) {
