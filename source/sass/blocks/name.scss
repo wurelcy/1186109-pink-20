@@ -1,9 +1,10 @@
 .name {
   border: 0;
+  padding: 0;
   margin: 0 auto;
   max-width: 280px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 26px;
+  margin-top: 22px;
 }
 
 .name__field {
@@ -14,16 +15,17 @@
 
   label {
     display: block;
-    padding-left: 22px;
+    padding-left: 21px;
   }
 }
 
 .your-name {
   border: 2px solid $grey;
   border-radius: 1px;
-  padding: 23px;
+  height: 63px;
+  padding: 12px;
   padding-left: 19px;
-  margin-top: 5px;
+  margin-top: 7px;
   min-width: 276px;
 
   &::placeholder {
@@ -57,8 +59,8 @@
 
   .your-name {
     flex-grow: 1;
-    margin-top: 0;
-    padding: 22px;
+    margin-top: 1px;
+    padding: 15px;
     padding-left: 19px;
   }
 }
@@ -71,10 +73,9 @@
   }
 
   .your-name {
-    padding: 23px;
-    padding-bottom: 21px;
+    padding: 14px;
     padding-left: 19px;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .name__field {
@@ -82,14 +83,7 @@
     margin-top: 11px;
 
     &:last-child {
-      margin-right: 0;
-      margin-left: auto;
-      margin-bottom: 0;
-      max-width: 340px;
-
-      label {
-        display: none;
-      }
+      margin-bottom: 35px;
     }
   }
 }

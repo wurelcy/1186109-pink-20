@@ -4,8 +4,8 @@
   margin: 0 auto;
   padding: 0;
   max-width: 280px;
-  margin-top: 14px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 12px;
 }
 
 .contest-contacts__legend {
@@ -31,7 +31,8 @@
 .contest-contacts__your-email {
   border: 2px solid $grey;
   border-radius: 1px;
-  padding: 22px;
+  height: 63px;
+  padding: 14px;
   padding-left: 18px;
   min-width: 276px;
 
@@ -51,7 +52,8 @@
     order: 0;
     border: 2px solid $grey;
     min-width: 620px;
-    margin-top: 40px;
+    margin-top: 38px;
+    margin-bottom: 15px;
   }
 
   .contest-contacts__legend {
@@ -62,6 +64,7 @@
     text-transform: uppercase;
     padding: 14px 31px;
     text-align: center;
+    margin-left: 178px;
   }
 
   .contest-contacts__number,
@@ -70,6 +73,7 @@
     flex-direction: column;
     margin-left: 57px;
     position: relative;
+    margin-top: 15px;
 
     &::before {
       position: absolute;
@@ -81,18 +85,18 @@
       background-position: center;
       background-repeat: no-repeat;
       top: 23px;
-      right: 83px;
+      right: 79px;
       z-index: 2;
     }
 
     &::after {
       position: absolute;
       content: "";
-      width: 59px;
-      height: 60px;
+      width: 58px;
+      height: 58px;
       background-color: $grey;
       top: 2px;
-      right: 65px;
+      right: 61px;
     }
 
     label {
@@ -105,12 +109,12 @@
 
   .contest-contacts__your-number,
   .contest-contacts__your-email {
-    max-width: 496px;
+    max-width: 500px;
     padding-left: 20px;
   }
 
   .contest-contacts__email {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
     &::before {
       mask: url("../img/icon-mail.svg");
@@ -133,12 +137,16 @@
 @media (min-width: $desktop-width) {
   .contest-contacts {
     min-width: 940px;
-    margin-top: 37px;
+    margin-top: 0;
     margin-bottom: 20px;
   }
 
   .contest-contacts__icon {
     right: 20px;
+  }
+
+  .contest-contacts__legend {
+    margin-left: 338px;
   }
 
   .contest-contacts__number {
@@ -149,7 +157,7 @@
 
   .contest-contacts__email,
   .contest-contacts__number {
-    margin-top: 12px;
+    margin-top: 13px;
     margin-left: 57px;
 
     &::before {
@@ -175,14 +183,14 @@
 
   .contest-contacts__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .contest-contacts__your-number,
   .contest-contacts__your-email {
     min-width: 375px;
-    padding: 23px;
-    padding-bottom: 21px;
+    padding: 15px;
     padding-left: 21px;
   }
 }
