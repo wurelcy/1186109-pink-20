@@ -6,8 +6,37 @@
   margin: 0;
 }
 
+.page-footer__logo-sparkle,
+.page-footer__logo-glasses {
+  fill: $pink;
+}
+
+.page-footer__logo-pink,
+.page-footer__logo-sparkles {
+  fill: $greyblue;
+}
+
 .page-footer__logo {
   margin: 0;
+
+  svg {
+    position: relative;
+    top: 2px;
+
+    &:hover,
+    &:focus {
+      fill: $pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__logo-sparkles,
+.page-footer__logo-sparkle {
+  display: none;
 }
 
 .social__list {
@@ -67,21 +96,26 @@
   font-size: 14px;
   line-height: 18px;
   position: relative;
-  padding-right: 40px;
+  padding-right: 10px;
   margin-bottom: 50px;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .page-footer__copyright-link {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    background-color: $pink;
-    mask: url("../img/logo-htmlacademy.svg") no-repeat center;
-    bottom: -7px;
-    right: 0;
+  svg {
+    fill: $pink;
+    position: relative;
+    top: 10px;
+    right: -10px;
+
+    &:hover,
+    &:focus {
+      fill: $greyblue;
+    }
+
+    &:active {
+      fill: rgba($greyblue, 0.3);
+    }
   }
 }
 
@@ -95,7 +129,7 @@
   .page-footer__copyright {
     margin: 0;
     margin-right: 12px;
-    margin-top: 32px;
+    margin-top: 20px;
     margin-bottom: 40px;
 
     &::after {
@@ -126,7 +160,7 @@
   .page-footer__copyright {
     font-size: 18px;
     margin-right: 0;
-    margin-top: 65px;
+    margin-top: 50px;
     margin-bottom: 75px;
   }
 
@@ -134,6 +168,11 @@
     margin-top: 55px;
     margin-left: 0;
     margin-bottom: 75px;
+  }
+
+  .page-footer__logo-sparkles,
+  .page-footer__logo-sparkle {
+    display: inline;
   }
 
   .social__list {

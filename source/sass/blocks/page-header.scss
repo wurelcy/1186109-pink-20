@@ -34,6 +34,34 @@
   text-align: center;
 }
 
+.page-header__logo {
+  svg {
+    position: relative;
+    fill: $white;
+    left: -72px;
+    top: -15px;
+
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active .page-header__logo-sparkles,
+    &:active {
+      fill: rgba($white, 0.3);
+    }
+  }
+}
+
+.page-header__logo-sparkles {
+  fill: $pink;
+}
+
+.page-header__logo-sparkles,
+.page-header__logo-glasses {
+  position: absolute;
+  display: none;
+}
+
 .page-header__toggle {
   position: relative;
   z-index: 2;
@@ -84,25 +112,18 @@
 }
 
 .page-header__upper-panel-wrapper {
-  background-color: transparent;
+  background-color: rgba($black, 0.3);
   border-bottom: 1px solid rgba($black, 0.3);
 }
 
 .container .page-header__upper {
   max-width: 280px;
-  margin: 23px auto 19px;
-}
-
-.photo-header,
-.form-header {
-  .page-header__upper-panel-wrapper {
-    background-color: rgba($black, 0.3);
-  }
+  margin: 23px auto 0;
 }
 
 .main-header .page-header__title {
   margin-bottom: 315px;
-  margin-top: 22px;
+  margin-top: 23px;
 
   br {
     display: none;
@@ -174,7 +195,14 @@
   }
 
   .page-header__logo {
-    margin-top: 5px;
+    svg {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .page-header__logo-glasses {
+    display: inline;
   }
 
   .page-header {
@@ -191,7 +219,7 @@
   }
 
   .page-header__upper-panel-wrapper--closed .page-header__toggle::before {
-    top: 22px;
+    top: 15px;
   }
 
   .main-header {
@@ -307,6 +335,18 @@
     margin-bottom: 35px;
   }
 
+  .page-header__logo {
+    margin-top: 0;
+
+    svg {
+      top: -2px;
+    }
+  }
+
+  .page-header__logo-sparkles {
+    display: inline;
+  }
+
   .main-header .page-header__title {
     margin-top: 98px;
     margin-bottom: 35px;
@@ -314,10 +354,6 @@
 
   .photo-header {
     min-height: 394px;
-  }
-
-  .page-header__logo {
-    margin-top: 0;
   }
 
   .photo-header .page-header__title {

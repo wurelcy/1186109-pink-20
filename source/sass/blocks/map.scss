@@ -40,7 +40,7 @@
   .map {
     max-height: 374px;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 25px;
 
     &::before {
       top: -65px;
@@ -58,7 +58,7 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    margin-top: 20px;
+    margin-top: 18px;
     max-height: 502px;
 
     &::before {

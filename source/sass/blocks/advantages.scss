@@ -87,7 +87,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-top: 45px;
+    margin-top: 47px;
     background: linear-gradient(-5deg, $lightgrey 67%, $white 67%, $white 67%);
   }
 
@@ -104,8 +104,7 @@
     grid-column: 2 / 2;
     position: relative;
     margin: 0;
-    margin-top: 104px;
-    margin-left: 5px;
+    margin-top: 108px;
     padding-bottom: 5px;
 
     br {
@@ -190,11 +189,11 @@
       position: absolute;
       background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 0 0, 320px 0, 645px 0;
+      background-position: 9px 0, 332px 0, 655px 0;
       background-size: contain, contain, contain;
       width: 920px;
       height: 302px;
-      top: -357px;
+      top: -360px;
       left: 0;
 
       @media (min-resolution: 2dppx) {
@@ -227,8 +226,8 @@
 
   .advantages__item {
     position: relative;
-    margin-left: 22px;
-    margin-right: 47px;
+    margin-left: 32px;
+    margin-right: 46px;
     max-width: 245px;
 
     &:nth-child(3) {
