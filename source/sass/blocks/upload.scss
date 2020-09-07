@@ -119,7 +119,8 @@
   margin-top: 53px;
   margin-bottom: 12px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $pink;
     color: $white;
   }
@@ -141,7 +142,8 @@
   padding: 15px 103px;
   margin-bottom: 41px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 3px solid rgba($greyblue, 0.3);
     color: rgba($greyblue, 0.3);
   }
@@ -166,7 +168,8 @@
 .upload__tool {
   opacity: 0.3;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 }
@@ -308,7 +311,8 @@
   }
 
   .upload__tool {
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 1;
     }
   }

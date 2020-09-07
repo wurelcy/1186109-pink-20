@@ -40,13 +40,18 @@
     fill: $white;
     left: -72px;
     top: -15px;
+  }
 
-    &:hover {
+  &:hover,
+  &:focus {
+    svg {
       fill: $pink;
     }
+  }
 
-    &:active .page-header__logo-sparkles,
-    &:active {
+  &:active {
+    svg,
+    .page-header__logo-sparkles {
       fill: rgba($white, 0.3);
     }
   }

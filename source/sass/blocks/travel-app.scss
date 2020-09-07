@@ -65,7 +65,8 @@
     top: 8px;
   }
 
-  &:hover + label::before {
+  &:hover + label::before,
+  &:focus + label::before {
     border-color: $greyblue;
   }
 

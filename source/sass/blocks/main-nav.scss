@@ -76,7 +76,8 @@
     font-size: 18px;
     line-height: 18px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $pink;
     }
 
